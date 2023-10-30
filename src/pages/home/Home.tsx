@@ -5,9 +5,9 @@ function Home() {
         <section>
             <div id='caixahome'>
                 <div id='conteudohome'>
-                    <p>
+                    <h1>
                         O Projeto Iniciativa Atena Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text:
-                    </p>
+                    </h1>
                     <ul>
                         <li>Lorem ipsum dolor </li>
                         <li>Lorem ipsum dolor </li>

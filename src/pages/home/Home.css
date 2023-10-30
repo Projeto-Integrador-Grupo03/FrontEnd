@@ -12,14 +12,12 @@ div#caixahome{
     margin-top: 3.5rem;
 }
 
-section #caixahome #conteudohome p{
+section #caixahome #conteudohome h1{
     color: #000;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 130%; /* 41.6px */
 }
 
 div#conteudohome{
@@ -27,6 +25,14 @@ div#conteudohome{
     width: 40rem;
     height: 25rem;
     flex-direction: column;
+    gap: 3rem;
+    margin-left: 5rem;
+}
+
+div#conteudohome ul{
+
+    margin-bottom: 2rem;
+
 }
 
 section #caixahome #botao{
@@ -38,8 +44,12 @@ section #caixahome #botao{
     color: #FFF;
 }
 
-div#atena{
-
+section #caixahome #atena{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50rem;
+    height: 35rem;
 }
 
 section{

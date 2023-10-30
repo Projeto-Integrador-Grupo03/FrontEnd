@@ -17,7 +17,6 @@ function Login() {
                             name="usuario"
                             placeholder="Usuario"
                             className="border-2 border-slate-700 rounded p-2"
-
                         />
                     </div>
                     <div className="flex flex-col w-full">
@@ -28,21 +27,15 @@ function Login() {
                             name="senha"
                             placeholder="Senha"
                             className="border-2 border-slate-700 rounded p-2"
-
                         />
                     </div>
-                    <button
-                        type='submit'
-                        className="rounded bg-indigo-400 flex justify-center
-                                   hover:bg-indigo-900 text-white w-1/2 py-2">
+                    <button type='submit' id='entrar'>
                         <span>Entrar</span>
                     </button>
-
                     <hr className="border-slate-800 w-full" />
-
                     <p>
                         Ainda não tem uma conta?{' '}
-                        <Link to="#" className="text-indigo-800 hover:underline">
+                        <Link to="#" className="text-[#F2AD94;] hover:underline">
                             Cadastre-se
                         </Link>
                     </p>

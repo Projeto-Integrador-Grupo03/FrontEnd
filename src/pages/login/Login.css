@@ -6,3 +6,12 @@
     background-size: cover;
     background-position: center;
 }
+
+#entrar{
+    width: 15rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: #D973AB;
+    color: #FFF;
+}
