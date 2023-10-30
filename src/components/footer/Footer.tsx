@@ -1,4 +1,5 @@
 ﻿import '../footer/Footer.css'
+import { Link } from 'react-router-dom';
 
 /* RFCE */
 
@@ -9,7 +10,8 @@ function Footer() {
 
             <div id='cima'>
                <div id='home'>
-                  <a href="#"><h2>Iniciativa Atena</h2></a>
+                  <Link to="/home">
+                     <a href="#"><h2>Iniciativa Atena</h2></a></Link>
                </div>
 
                <div id='direcionamento'>
@@ -23,7 +25,8 @@ function Footer() {
 
                   <div>
                      <ul className='link-format'>
-                        <a href=""><li>Quem Somos</li></a>
+                        <Link to="/contato">
+                           <a href=""><li>Quem Somos</li></a></Link>
                         <a href=""><li>Meu Perfil</li></a>
                      </ul>
                   </div>
