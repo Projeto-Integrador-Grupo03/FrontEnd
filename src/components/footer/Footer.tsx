@@ -17,17 +17,17 @@ function Footer() {
                <div id='direcionamento'>
 
                   <div>
-                     <ul className='link-format'>
-                        <a href=""><li>Produtos</li></a>
-                        <a href=""><li>Noticias</li></a>
+                     <ul>
+                        <a className='link-format' href=""><li>Produtos</li></a>
+                        <a className='link-format' href=""><li>Noticias</li></a>
                      </ul>
                   </div>
 
                   <div>
-                     <ul className='link-format'>
+                     <ul>
                         <Link to="/contato">
-                           <a href=""><li>Quem Somos</li></a></Link>
-                        <a href=""><li>Meu Perfil</li></a>
+                           <a className='link-format' href=""><li>Quem Somos</li></a></Link>
+                        <a className='link-format' href=""><li>Meu Perfil</li></a>
                      </ul>
                   </div>
 
