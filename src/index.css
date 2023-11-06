@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
- 
- body,
- button,
- input,
- select,
- textarea,
- header,
- nav {
-   font-family: 'Eczar', serif;
-   font-family: 'Inter', sans-serif;
-   font-family: 'EB Garamond', serif;
- }
- 
- body {
-   background-color: whitesmoke;
- }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+header,
+nav {
+  font-family: 'Eczar', serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'EB Garamond', serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
