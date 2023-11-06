@@ -28,5 +28,9 @@ outline: none;
 }
 
 .primeiro-icone {
-font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+.botaouser {
+  font-family: 'Open Sans', sans-serif;
 }

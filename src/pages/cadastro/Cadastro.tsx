@@ -76,7 +76,7 @@ function Cadastro() {
                         <div className='primeiro-icone flex flex-col items-center'>
                             <div className='imagem-icone w-[5rem] h-[5rem] mb-3'></div>
                                 <h6 className='text-[0.8rem] tracking-[0.1rem] mb-8'>Iniciativa Atena</h6></div>
-                            <h2 className='primeiro-icone text-[1.7rem] text-[#515961]' >Criar Conta</h2>
+                            <h2 className='primeiro-icone text-[1.7rem] text-[#515961] mb-[8px]' >Criar Conta</h2>
                             <div className='w-[16.5rem] h-[2rem]'>
                                 <hr />
                             </div>
@@ -132,12 +132,12 @@ function Cadastro() {
                                     onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}
                                 />
                             </div>
-                            <div>
-                                <button
+                            <div className='flex gap-[0.5rem] mt-[8px]'>
+                                <button className='w-[9.5rem] h-[3rem] bg-[#F28D9F] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff]'
                                     onClick={retornar}>
                                     Já possui uma conta?
                                 </button>
-                                <button type='submit'>
+                                <button className='w-[7rem] h-[3rem] bg-[#D973AB] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff]'  type='submit'>
                                     {isLoading ? <RotatingLines
                                         strokeColor="white"
                                         strokeWidth="5"
