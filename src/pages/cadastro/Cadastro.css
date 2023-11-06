@@ -28,7 +28,11 @@
 }
 
 .primeiro-icone {
-  font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+.botaouser {
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (width <=1100px) {
