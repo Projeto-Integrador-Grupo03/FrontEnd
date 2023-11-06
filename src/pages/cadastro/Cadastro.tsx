@@ -68,10 +68,10 @@ function Cadastro() {
     }
 
     return (
-            <div className='flex w-[100%] h-[40rem] justify-center items-center'>
-                <div className='w-[60rem] h-[35rem] flex justify-between bg-white shadow-xl'>
+            <div className='wrap flex w-[100%] h-[40rem] justify-center items-center'>
+                <div className='wrap2 w-[60rem] h-[35rem] flex justify-between bg-white shadow-xl'>
 
-                    <div className='w-[30rem]'>
+                    <div className='form w-[30rem]'>
                         <form className='flex flex-col items-center justify-center p-[1rem] h-[0.5]' onSubmit={cadastrarNovoUsuario}>
                         <div className='primeiro-icone flex flex-col items-center'>
                             <div className='imagem-icone w-[5rem] h-[5rem] mb-3'></div>
@@ -150,7 +150,7 @@ function Cadastro() {
                             </div>
                         </form>
                     </div>
-                    <div className='imagem w-[30rem] h-[10rem]'>
+                    <div className='imagem flex w-[30rem] h-[10rem]'>
                     </div>
                 </div>
             </div>
