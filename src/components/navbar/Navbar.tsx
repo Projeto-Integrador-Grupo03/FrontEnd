@@ -6,8 +6,10 @@ function Navbar() {
       <header>
          <nav id="nav-flex">
 
-            <Link to="/home">
-               <a className="link-nome" href="#">Iniciativa Atena</a> </Link>
+         
+               <Link to="/home">
+                  <a className="link-nome" href="#">Iniciativa Atena</a> </Link>
+   
 
             <div id='div-flex'>
                <ul id="ul-links">

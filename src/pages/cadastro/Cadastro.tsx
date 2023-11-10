@@ -133,11 +133,11 @@ function Cadastro() {
                                 />
                             </div>
                             <div className='flex gap-[0.5rem] mt-[8px]'>
-                                <button className='w-[9.5rem] h-[3rem] bg-[#F28D9F] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff]'
+                                <button className='w-[9.5rem] h-[3rem] bg-[#F28D9F] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff] hover:font-[600] hover:text-[0.73rem]'
                                     onClick={retornar}>
                                     Já possui uma conta?
                                 </button>
-                                <button className='w-[7rem] h-[3rem] bg-[#D973AB] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff]'  type='submit'>
+                                <button className='w-[7rem] h-[3rem] bg-[#F28D9F] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff] hover:font-[600] hover:text-[0.73rem]'  type='submit'>
                                     {isLoading ? <RotatingLines
                                         strokeColor="white"
                                         strokeWidth="5"
