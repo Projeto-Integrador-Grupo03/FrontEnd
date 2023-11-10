@@ -7,6 +7,7 @@ import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import Contato from './pages/contato/Contato'
 import Cadastro from './pages/cadastro/Cadastro';
+import FormularioCategoria from './components/categoria/formularioCategoria/FormularioCategoria';
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/cadastrocategoria" element={<FormularioCategoria />} />
+          <Route path="/editarcategoria/:id" element={<FormularioCategoria />} />
+          
         </Routes>
         </div>
 
