@@ -6,19 +6,18 @@ function Navbar() {
       <header>
          <nav id="nav-flex">
 
-         
-               <Link to="/home">
-                  <a className="link-nome" href="#">Iniciativa Atena</a> </Link>
-   
-
+            <Link to="/home">
+               <a className="link-nome" href="#">Iniciativa Atena</a> </Link>
             <div id='div-flex'>
                <ul id="ul-links">
-                  <li><a className="link-format" href="#">Produtos</a></li>
-                  <li><a className="link-format" href="#">Noticias</a></li>
-                  <li><Link to="/contato"><a className='link-format' href="#">Quem Somos</a></Link></li>
-                  <li><a className="link-format" href="#">Meu Perfil</a></li>
-                  <li><a className="link-format" href="#">Carrinho</a></li>
-                  <li><Link to="/login"><a className='link-format' href="#">Login</a></Link></li>
+                  <Link to="/"><li className='link-format'>Produtos</li></Link>
+                  <Link to="/categorias"><li className='link-format'>Categorias</li></Link>
+                  <Link to="/cadastrocategoria"><li className='link-format'>Cadastro Categorias</li></Link>
+                  <Link to="/"><li className='link-format'>Noticias</li></Link>
+                  <Link to="/contato"><li className='link-format'>Quem Somos</li></Link>
+                  <Link to="/"><li className='link-format'>Meu Perfil</li></Link>
+                  <Link to="/"><li className='link-format'>Carrinho</li></Link>
+                  <Link to="/login"><li className='link-format'>Login</li></Link>
                </ul>
             </div>
          </nav>
