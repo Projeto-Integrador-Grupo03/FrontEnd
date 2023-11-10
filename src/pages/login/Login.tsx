@@ -16,6 +16,7 @@ function Login() {
         {} as UsuarioLogin
     );
 
+
     useEffect(() => {
         if (usuario.token !== "") {
             navigate('/home')
@@ -36,57 +37,63 @@ function Login() {
 
     return (
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">
-                <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
-                    <h2 className="text-slate-900 text-5xl ">Entrar</h2>
-                    <div className="flex flex-col w-full">
-                        <label htmlFor="usuario">Usuário</label>
-                        <input
-                            type="text"
-                            id="usuario"
-                            name="usuario"
-                            placeholder="Usuario"
-                            className="border-2 border-slate-700 rounded p-2"
-                            value={usuarioLogin.usuario}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-                        />
+            <div className='flex w-[100%] h-[40rem] justify-center items-center'>
+                <div className='w-[60rem] h-[35rem] flex justify-between bg-white shadow-xl'>
+                    <div className='imagem w-[30rem] h-[10rem]'>
                     </div>
-                    <div className="flex flex-col w-full">
-                        <label htmlFor="senha">Senha</label>
-                        <input
-                            type="password"
-                            id="senha"
-                            name="senha"
-                            placeholder="Senha"
-                            className="border-2 border-slate-700 rounded p-2"
-                            value={usuarioLogin.senha} 
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-                        />
+                    <div className='w-[30rem]'>
+                        <form className='flex flex-col items-center justify-center p-[1rem] h-[0.5]' onSubmit={login}>
+                            <div className='primeiro-icone flex flex-col items-center'>
+                                <div className='imagem-icone w-[5rem] h-[5rem] mb-3'></div>
+                                <h6 className='text-[0.8rem] tracking-[0.1rem] mb-8'>Iniciativa Atena</h6></div>
+                            <h2 className='primeiro-icone text-[1.7rem] text-[#515961] mb-[8px]' >Faça seu login</h2>
+                            <div className='w-[16.5rem] h-[2rem]'>
+                                <hr />
+                            </div>
+
+                            <div className='flex flex-col gap-[0.5rem]'>
+                                <div>
+                                    <input className='usuario w-[17rem] h-[2.5rem] rounded-md border-2 placeholder:text-[0.8rem] p-[0.5rem]'
+                                        type="text"
+                                        id="usuario"
+                                        name="usuario"
+                                        placeholder="e-mail"
+                                        value={usuarioLogin.usuario}
+                                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                                    />
+                                </div>
+                                <div>
+                                    <input className='usuario w-[17rem] h-[2.5rem] outline-none rounded-md border-2 placeholder:text-[0.8rem] p-[0.5rem]'
+                                        type="password"
+                                        id="senha"
+                                        name="senha"
+                                        placeholder="Senha"
+                                        value={usuarioLogin.senha}
+                                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                                    />
+                                </div>
+                                <div className='flex flex-col justify-center items-center gap-[0.5rem] mt-[8px]'>
+                                    <button className='w-[7rem] h-[3rem] bg-[#D973AB] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff]' type='submit'>
+                                        {isLoading ? <RotatingLines
+                                            strokeColor="white"
+                                            strokeWidth="5"
+                                            animationDuration="0.75"
+                                            width="24"
+                                            visible={true}
+                                        /> : <span>Login</span>}
+                                    </button>
+                                    <p>
+                                        Ainda não tem uma conta?{' '}
+                                        <Link to="/cadastro" className="text-indigo-800 hover:underline">
+                                            Cadastre-se
+                                        </Link>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <button
-                        type='submit'
-                        className="rounded bg-indigo-400 flex justify-center
-                                   hover:bg-indigo-900 text-white w-1/2 py-2">
-                        {isLoading ? <RotatingLines
-                            strokeColor="white"
-                            strokeWidth="5"
-                            animationDuration="0.75"
-                            width="24"
-                            visible={true}
-                        /> :
-                            <span>Entrar</span>}
-                    </button>
 
-                    <hr className="border-slate-800 w-full" />
-
-                    <p>
-                        Ainda não tem uma conta?{' '}
-                        <Link to="/cadastro" className="text-indigo-800 hover:underline">
-                            Cadastre-se
-                        </Link>
-                    </p>
-                </form>
-                <div className="fundoLogin hidden lg:block"></div>
+                </div>
             </div>
         </>
     );
