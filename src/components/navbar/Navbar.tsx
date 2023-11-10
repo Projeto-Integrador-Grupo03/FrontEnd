@@ -11,7 +11,7 @@ function Navbar() {
             <div id='div-flex'>
                <ul id="ul-links">
                   <Link to="/"><li className='link-format'>Produtos</li></Link>
-                  <Link to="/categoria"><li className='link-format'>Categorias</li></Link>
+                  <Link to="/categorias"><li className='link-format'>Categorias</li></Link>
                   <Link to="/cadastrocategoria"><li className='link-format'>Cadastro Categorias</li></Link>
                   <Link to="/"><li className='link-format'>Noticias</li></Link>
                   <Link to="/contato"><li className='link-format'>Quem Somos</li></Link>
