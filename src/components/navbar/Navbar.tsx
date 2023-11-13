@@ -10,7 +10,7 @@ function Navbar() {
                <a className="link-nome" href="#">Iniciativa Atena</a> </Link>
             <div id='div-flex'>
                <ul id="ul-links">
-                  <Link to="/"><li className='link-format'>Produtos</li></Link>
+                  <Link to="/produtos"><li className='link-format'>Produtos</li></Link>
                   <Link to="/categorias"><li className='link-format'>Categorias</li></Link>
                   <Link to="/cadastrocategoria"><li className='link-format'>Cadastro Categorias</li></Link>
                   <Link to="/"><li className='link-format'>Noticias</li></Link>

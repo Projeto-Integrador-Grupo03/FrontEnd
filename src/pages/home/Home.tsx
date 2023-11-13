@@ -1,4 +1,5 @@
 import '../home/Home.css'
+import ListaProdutos from '../../components/produtos/listaProdutos/ListaProdutos'
 
 function Home() {
     return (
@@ -21,6 +22,7 @@ function Home() {
                     <img src="./src/assets/img/atena.jpg" alt="" />
                 </div>
             </div>
+            <ListaProdutos />
         </section>
     )
 }
