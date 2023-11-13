@@ -7,7 +7,8 @@ interface CardProdutosProps {
 
 function CardProdutos({ post }: CardProdutosProps) {
     return (
-        <div className='border-slate-900 border 
+        <div>
+            <div className='border-slate-900 border 
             flex flex-col rounded overflow-hidden justify-between'>
 
             <div>
@@ -31,6 +32,8 @@ function CardProdutos({ post }: CardProdutosProps) {
                 </Link>
             </div>
         </div>
+        </div>
+        
     )
 }
 
