@@ -22,7 +22,7 @@ function Home() {
                     </div>
                 </div>
                 <div id='atena'>
-                    <img src="./src/assets/img/atena.jpg" alt="" />
+                    <img src="./src/assets/img/atena.png" alt="" />
                 </div>
             </div>
             <ListaProdutos />

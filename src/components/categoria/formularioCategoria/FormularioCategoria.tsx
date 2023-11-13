@@ -125,7 +125,7 @@ function FormularioCategoria() {
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="descricao">Descrição da Categoria</label>
+                    <label htmlFor="descricao">Imagem da Categoria</label>
                     <input
                         type="text"
                         placeholder="Descreva aqui sua categoria"
