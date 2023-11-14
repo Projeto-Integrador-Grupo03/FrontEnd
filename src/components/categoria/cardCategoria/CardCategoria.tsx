@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Categoria from '../../../models/Categoria'
 import { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthContext';
+import './CardCategoria.css'
 
 interface CardCategoriasProps {
     categoria: Categoria
@@ -11,18 +12,15 @@ function CardCategoria({ categoria }: Readonly<CardCategoriasProps>) {
     const { usuario } = useContext(AuthContext);
 
     return (
-        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 text-white font-bold text-2xl'>
-                Categoria
-            </header>
+        <div className='borda-categoria border-none flex flex-col rounded-2xl overflow-hidden justify-between w-[20rem] h-[24rem]'>
 
-            <p className='p-8 text-3xl bg-slate-200 h-full'>
+            <div className='esquerda-imagem bg-cover bg-no-repeat bg-center w-[20rem] h-[24rem]' style={{
+                    backgroundImage: `url(${categoria.descricao})`
+                }}>
+            </div>
+            <div className='titulo-cat fonte text-[#515961] text-center py-2 px-6 font-bold text-2xl mt-[0.1]'>
                 {categoria.nome}
-            </p>
-
-            <p className='p-8 text-3xl bg-slate-200 h-full'>
-                {categoria.descricao}
-            </p>
+            </div>
 
             {
                 usuario.usuario === 'root@root.com.br' ? (<div className="flex">

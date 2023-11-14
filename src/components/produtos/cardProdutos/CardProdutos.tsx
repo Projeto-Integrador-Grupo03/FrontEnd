@@ -68,7 +68,6 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
                         <span className='text-[#515961] font-[500]'>{formattedNumber}</span>
 
                     </div>
-
                 </div>
 
                 {
