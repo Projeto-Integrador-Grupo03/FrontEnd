@@ -20,7 +20,6 @@ function Cadastro() {
         usuario: '',
         senha: '',
         foto: '',
-        admin: 0
     })
 
     useEffect(() => {

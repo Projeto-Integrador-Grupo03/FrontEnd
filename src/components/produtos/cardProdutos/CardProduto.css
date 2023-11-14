@@ -1,0 +1,20 @@
+﻿
+.borda {
+  outline: 3px solid hsla(16, 78%, 76%, 0.30);
+  box-shadow: 0px 0px 36px 0px rgba(203, 95, 93, 0.39);
+  border-radius: 1.8rem;
+  background: rgba(242, 173, 148, 0.10);
+}
+
+.fonte {
+  font-family: 'Inter', sans-serif;
+}
+
+.input {
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  outline: none;
+  border-radius: 13px;
+  width: 6rem;
+  padding: 0.05rem;
+}
+
