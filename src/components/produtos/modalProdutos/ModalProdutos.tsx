@@ -5,6 +5,7 @@ import 'reactjs-popup/dist/index.css';
 import './ModalProdutos.css'
 import { AuthContext } from '../../../contexts/AuthContext';
 
+
 function ModalProdutos() {
 
     const { usuario } = useContext(AuthContext);
@@ -16,7 +17,7 @@ function ModalProdutos() {
                     <Popup
                         trigger={
                             <button
-                                className='w-[8.5rem] h-[3rem] bg-[#D973AB] rounded-md botaouser text-[0.85rem] font-[400] text-[#ffff]'>
+                                className='link-format w-[3.5rem] h-[1rem] rounded-md botaouser text-[1rem] font-[500] text-[#ffff] font-[Eczar]'>
                                 Novo Produto
                             </button>
                         }

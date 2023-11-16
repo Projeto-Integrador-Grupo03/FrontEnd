@@ -1,12 +1,31 @@
 ﻿import '../footer/Footer.css'
 import { Link } from 'react-router-dom';
+import ModalProdutos from '../produtos/modalProdutos/ModalProdutos';
+import { AuthContext } from '../../contexts/AuthContext';
+import { useContext } from 'react'
 
 /* RFCE */
 
 function Footer() {
+
+   const { usuario } = useContext(AuthContext)
+
    return (
       <footer>
          <div id='display'>
+
+            <div>
+               {
+                  usuario.usuario === 'root@root.com.br' ? (
+                     <div id='div-flex'>
+                        <ul id="ul-links">
+                           <Link to="/cadastrocategoria"><li className='link-format text-[white]'>Cadastro Categorias</li></Link>
+                           <ModalProdutos />
+                        </ul>
+                     </div>
+                  ) : ('')
+               }
+            </div>
 
             <div id='cima'>
                <div id='home'>

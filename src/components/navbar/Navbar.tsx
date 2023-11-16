@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { SignOut } from '@phosphor-icons/react';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 
 
 import '../navbar/Navbar.css'
@@ -13,7 +12,7 @@ function Navbar() {
 
    const navigate = useNavigate();
 
-   const { usuario, handleLogout } = useContext(AuthContext)
+   const { handleLogout } = useContext(AuthContext)
 
    function logout() {
       handleLogout()
@@ -27,17 +26,6 @@ function Navbar() {
 
             <Link to="/home">
                <a className="link-nome" href="#">Iniciativa Atena</a> </Link>
-
-            {
-               usuario.usuario === 'root@root.com.br' ? (
-                  <div id='div-flex'>
-                     <ul id="ul-links">
-                        <Link to="/cadastrocategoria"><li className='link-format text-[white]'>Cadastro Categorias</li></Link>
-                     </ul>
-                  </div>
-               ) : ('')
-            }
-
 
             <div id='div-flex'>
                <ul id="ul-links">

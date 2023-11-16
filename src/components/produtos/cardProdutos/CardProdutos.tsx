@@ -42,24 +42,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
                     <div className='div-baixo flex items-end justify-between h-[5rem] px-[1.5rem]'>
 
                         <div className='flex flex-col gap-3'>
-
-                            <select name="" id=""
-                                className='fonte input placeholder:text-[0.65rem] placeholder:tracking-[0.03rem] placeholder:text-center placeholder:font-[500]
-                                text-[0.65rem] tracking-[0.03rem] text-center font-[400] border-none outline-none focus:border-none focus:outline-none overflow-scroll'
-                            >
-                                <option value="" selected disabled>Quantidade</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                                <option value="">7</option>
-                                <option value="">8</option>
-                                <option value="">9</option>
-                                <option value="">10</option>
-                            </select>
-                            <button className='flex justify-center items-center text-center border-none outline-none p-[0.30rem]  bg-[#D973AB] rounded-md'>
+                            <button className='flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D973AB] rounded-md'>
                                 <i><ShoppingCart size={24} weight="fill" color="#f5f5f5" /></i>
                                 <i><Plus size={14} weight="bold" color="#f5f5f5" /></i>
                             </button>
