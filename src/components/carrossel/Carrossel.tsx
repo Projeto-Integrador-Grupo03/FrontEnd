@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "./Carrossel.css";
 
 import { Navigation, Pagination } from 'swiper/modules';
+import { CSSProperties } from "react";
 
 function Carrossel() {
 
