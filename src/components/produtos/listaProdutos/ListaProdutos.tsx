@@ -3,6 +3,7 @@ import { Dna } from 'react-loader-spinner';
 import { buscar } from '../../../services/Service';
 import Produto from '../../../models/Produto';
 import CardProdutos from '../cardProdutos/CardProdutos';
+import { toastAlerta } from '../../../utils/toastAlerta';
 
 
 function ListaProdutos() {
@@ -14,7 +15,7 @@ function ListaProdutos() {
             await buscar('/produtos', setProdutos, {})
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                alert('Houve um erro inesperado')
+                toastAlerta('Houve um erro inesperado', 'erro')
             }
         }
 

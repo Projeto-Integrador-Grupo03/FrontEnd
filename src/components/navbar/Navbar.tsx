@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { SignOut } from '@phosphor-icons/react';
 import { useNavigate } from 'react-router-dom';
-
+import { toastAlerta } from '../../utils/toastAlerta';
 
 import '../navbar/Navbar.css'
 
@@ -16,7 +16,7 @@ function Navbar() {
 
    function logout() {
       handleLogout()
-      alert('Obrigado por usar nosso site!')
+      toastAlerta('Obrigado por usar nosso site!', 'default')
       navigate('/login')
    }
 

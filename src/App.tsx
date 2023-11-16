@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { ToastContainer } from 'react-toastify';
 
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
@@ -13,12 +14,24 @@ import DeletarCategoria from './components/categoria/deletarCategoria/DeletarCat
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProdutos from './components/produtos/formularioProdutos/FormularioProdutos';
 import DeletarProduto from './components/produtos/deletarProdutos/DeletarProdutos';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
   return (
 
     <AuthProvider>
+      <ToastContainer
+      position="top-left"
+      autoClose={2000}
+      hideProgressBar={false}
+      newestOnTop
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover={false}
+      theme="light"/>
       <BrowserRouter>
         <Navbar />
         <div className='min-h-[80vh]'>
