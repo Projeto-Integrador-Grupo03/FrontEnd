@@ -12,12 +12,16 @@ function Navbar() {
 
    const navigate = useNavigate();
 
-   const { handleLogout } = useContext(AuthContext)
+   const { usuario, handleLogout } = useContext(AuthContext)
 
    function logout() {
-      handleLogout()
-      toastAlerta('Obrigado por usar nosso site!', 'default')
-      navigate('/login')
+      if (usuario.token === '') {
+         toastAlerta('Você precisa estar logado para sair!', 'info')
+      } else {
+         handleLogout()
+         toastAlerta('Obrigado por usar nosso site!', 'default')
+         navigate('/login')
+      }
    }
 
    return (
