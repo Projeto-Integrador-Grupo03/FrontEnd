@@ -17,7 +17,7 @@ function ModalProdutos() {
                     <Popup
                         trigger={
                             <button
-                                className='link-format w-[3.5rem] h-[1rem] rounded-md botaouser text-[1rem] font-[500] text-[#ffff] font-[Eczar]'>
+                                className='link-format w-[9rem] h-[2rem] rounded-md text-[1rem] font-[700] text-[#ffff]'>
                                 Novo Produto
                             </button>
                         }

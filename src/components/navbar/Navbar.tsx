@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { SignOut } from '@phosphor-icons/react';
 import { useNavigate } from 'react-router-dom';
 import { toastAlerta } from '../../utils/toastAlerta';
+import { ShoppingCart } from '@phosphor-icons/react/dist/ssr';
 
 import '../navbar/Navbar.css'
 
@@ -33,13 +34,13 @@ function Navbar() {
 
             <div id='div-flex'>
                <ul id="ul-links">
-                  <Link to="/produtos"><li className='link-format text-[white]'>Produtos</li></Link>
-                  <Link to="/categorias"><li className='link-format text-[white]'>Categorias</li></Link>
-                  <Link to="/"><li className='link-format text-[white]'>Canais de Apoio</li></Link>
-                  <Link to="/contato"><li className='link-format text-[white]'>Quem Somos</li></Link>
-                  <Link to="/"><li className='link-format text-[white]'>Carrinho</li></Link>
-                  <Link to="/login"><li className='link-format text-[white]'>Login</li></Link>
-                  <Link onClick={logout} to="/login"><i className='link-format cursor-pointer'><SignOut size={28} color="#fff5f5" weight="bold" /></i></Link>
+                  <Link to="/produtos"><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
+                  <Link to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
+                  <Link to="/"><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
+                  <Link to="/contato"><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
+                  <Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>
+                  <Link to="/"><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
+                  <Link onClick={logout} to="/login"><li><i className='link-format cursor-pointer'><SignOut size={28} color="#fff5f5" weight="bold" /></i></li></Link>
                </ul>
             </div>
          </nav>
