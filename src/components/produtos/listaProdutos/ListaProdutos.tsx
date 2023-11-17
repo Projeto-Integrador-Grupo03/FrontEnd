@@ -33,9 +33,9 @@ function ListaProdutos() {
             {produtos.length === 0 && (
                 <div className='flex items-center justify-center h-[90vh]'>
                     <l-trefoil
-                        color='#c82d82'
+                        color={'hsla(16, 78%, 76%, 0.90)'}
                         size={300}
-                        speed={1.5}
+                        speed={1.8}
                         stroke={13}
                         stroke-length={0.10}
                         bg-opacity={0.22}
