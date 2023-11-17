@@ -152,7 +152,7 @@ function FormularioProdutos() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="duracao">Duração</label>
+                    <label htmlFor="duracao">Descrição</label>
 
                     <input
                         value={produto.duracao}

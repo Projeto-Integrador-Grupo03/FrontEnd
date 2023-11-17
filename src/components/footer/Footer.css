@@ -9,6 +9,10 @@
    margin-top: 2rem;
 }
 
+h2#font {
+   font-family: 'Eczar', serif;
+}
+
 footer #display {
    display: flex;
    align-items: center;

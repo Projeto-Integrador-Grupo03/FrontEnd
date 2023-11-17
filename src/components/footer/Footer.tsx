@@ -14,13 +14,10 @@ function Footer() {
    return (
       <footer>
          <div id="display">
-
-
-
             <div id='cima'>
                <div id='home'>
                   <Link to="/home">
-                     <a href="#"><h2>Iniciativa Atena</h2></a></Link>
+                     <a href="#"><h2 id='font'>Iniciativa Atena</h2></a></Link>
                </div>
 
                <div className='flex items-center justify-center'>
@@ -48,7 +45,7 @@ function Footer() {
                   <div>
                      <ul>
                         <a className='link-format font-[700]' href=""><li>Produtos</li></a>
-                        <a className='link-format font-[700]' href=""><li>Noticias</li></a>
+                        <a className='link-format font-[700]' href=""><li>Canais de Apoio</li></a>
                      </ul>
                   </div>
 
