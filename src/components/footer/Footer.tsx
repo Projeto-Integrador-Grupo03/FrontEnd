@@ -32,13 +32,13 @@ function Footer() {
 
                            <div className='links flex gap-6 justify-center items-center'>
                               <a href="https://github.com/dot-NET03Generation" target='blank'><i><GithubLogo size={32} color="#fff5f5" weight="bold" /></i></a>
-                              <a href="#"><i><Graph size={32} color="#fff5f5" weight="bold" /></i></a>
+                              <a href="https://linktr.ee/iniciativatena" target='blank'><i><Graph size={32} color="#fff5f5" weight="bold" /></i></a>
                            </div>
                            <ModalProdutos />
                         </div>
                      ) : (<div className='links flex gap-6 justify-center items-center'>
                         <a href="https://github.com/dot-NET03Generation" target='blank'><i><GithubLogo size={32} color="#fff5f5" weight="bold" /></i></a>
-                        <a href="#"><i><Graph size={32} color="#fff5f5" weight="bold" /></i></a>
+                        <a href="https://linktr.ee/iniciativatena" target='blank'><i><Graph size={32} color="#fff5f5" weight="bold" /></i></a>
                      </div>)
                   }
                </div>

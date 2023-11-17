@@ -49,6 +49,7 @@ footer #display #cima #home a:hover {
 }
 
 footer #display #cima #direcionamento {
+   font-family: 'Eczar', serif;
    display: flex;
    align-items: center;
    gap: 2rem;
