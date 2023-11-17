@@ -1,12 +1,13 @@
 ﻿import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Dna } from 'react-loader-spinner';
 import { toastAlerta } from '../../../utils/toastAlerta';
 import { buscar } from '../../../services/Service';
 import { AuthContext } from '../../../contexts/AuthContext';
-
 import Categoria from '../../../models/Categoria';
 import CardCategoria from '../cardCategoria/CardCategoria';
+import { trefoil } from 'ldrs'
+trefoil.register('l-trefoil')
+
 
 function ListaCategoria() {
 
@@ -44,14 +45,16 @@ function ListaCategoria() {
   return (
     <>
       {categorias.length === 0 && (
-        <Dna
-          visible={true}
-          height="200"
-          width="200"
-          ariaLabel="dna-loading"
-          wrapperStyle={{}}
-          wrapperClass="dna-wrapper mx-auto"
-        />
+        <div className='flex items-center justify-center h-[90vh]'>
+          <l-trefoil
+            color='#c82d82'
+            size={300}
+            speed={1.5}
+            stroke={13}
+            stroke-length={0.10}
+            bg-opacity={0.22}
+          />
+        </div>
       )}
 
       <div className="flex justify-center w-full my-4">
@@ -59,7 +62,7 @@ function ListaCategoria() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {categorias.map((categoria) => (
-                <CardCategoria key={categoria.id} categoria={categoria} />
+              <CardCategoria key={categoria.id} categoria={categoria} />
             ))}
 
           </div>

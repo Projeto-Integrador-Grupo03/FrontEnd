@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
-import { Dna } from 'react-loader-spinner';
 import { buscar } from '../../../services/Service';
 import Produto from '../../../models/Produto';
 import CardProdutos from '../cardProdutos/CardProdutos';
 import { toastAlerta } from '../../../utils/toastAlerta';
+import { trefoil } from 'ldrs'
+trefoil.register('l-trefoil')
+
 
 
 function ListaProdutos() {
@@ -29,14 +31,16 @@ function ListaProdutos() {
 
         <>
             {produtos.length === 0 && (
-                <Dna
-                    visible={true}
-                    height="200"
-                    width="200"
-                    ariaLabel="dna-loading"
-                    wrapperStyle={{}}
-                    wrapperClass="dna-wrapper mx-auto"
-                />
+                <div className='flex items-center justify-center h-[90vh]'>
+                    <l-trefoil
+                        color='#c82d82'
+                        size={300}
+                        speed={1.5}
+                        stroke={13}
+                        stroke-length={0.10}
+                        bg-opacity={0.22}
+                    />
+                </div>
             )}
 
             <div className='container mx-4 my-4

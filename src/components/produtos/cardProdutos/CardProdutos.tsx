@@ -42,7 +42,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
                     <div className='div-baixo flex items-end justify-between h-[5rem] px-[1.5rem]'>
 
                         <div className='flex flex-col gap-3'>
-                            <button className='flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D973AB] rounded-md'>
+                            <button className='flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md'>
                                 <i><ShoppingCart size={24} weight="fill" color="#f5f5f5" /></i>
                                 <i><Plus size={14} weight="bold" color="#f5f5f5" /></i>
                             </button>

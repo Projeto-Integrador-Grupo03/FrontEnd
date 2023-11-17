@@ -1,7 +1,8 @@
 .swiper {
-    /* width: 100%; */
-    height: 60vh;
-
+    width: 100%; 
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .swiper-slide img {
@@ -9,19 +10,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 div.swiper-button-prev,
 div.swiper-button-next,
 div.swiper-pagination-color {
-   color: rgba(203, 95, 93, 0.39);
+    color: rgba(203, 95, 93, 0.39);
 }
+
 /*div.swiper-button-pagination-bullet{
     background-color: rgba(203, 95, 93, 0.39) !important;
 }*/
