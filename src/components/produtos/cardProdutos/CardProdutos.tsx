@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Produto from "../../../models/Produto";
 import { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthContext";
-import { Plus, ShoppingCart } from "@phosphor-icons/react";
+import { MinusCircle, Plus, ShoppingCart } from "@phosphor-icons/react";
 import "./CardProduto.css";
 
 interface CardProdutosProps {
@@ -17,6 +17,8 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
     currency: "BRL",
   });
   console.log(formattedNumber);
+
+  const { adicionarProduto, removerProduto } = useContext(AuthContext)
 
   return (
     <div className="fonte">
@@ -45,7 +47,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
 
           <div className="div-baixo flex items-end justify-between h-[5rem] px-[1.5rem]">
             <div className="flex flex-col gap-3">
-              <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md">
+              <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md" onClick={() => adicionarProduto(post)}>
                 <i>
                   <ShoppingCart size={24} weight="fill" color="#f5f5f5" />
                 </i>
@@ -53,6 +55,15 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
                   <Plus size={14} weight="bold" color="#f5f5f5" />
                 </i>
               </button>
+
+              {/*<button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#8673d9] rounded-md" onClick={() => removerProduto(post.id)}>
+                <i>
+                  <ShoppingCart size={24} weight="fill" color="#f5f5f5" />
+                </i>
+                <i>
+                  <MinusCircle size={14} weight="bold" color="#f5f5f5"  />
+                </i>
+        </button>*/}
             </div>
 
             <span className="text-[#515961] font-[500]">

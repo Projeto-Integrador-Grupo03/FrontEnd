@@ -37,7 +37,7 @@ function Navbar() {
                </ul>
 
                <div className='icones flex items-center gap-5 list-none'>
-                  <Link to="/"><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
+                  <Link to="/carrinho"><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
                   <Link onClick={logout} to="/login"><li><i className='link-format cursor-pointer'><SignOut size={28} color="#fff5f5" weight="bold" /></i></li></Link>
                </div>
 
