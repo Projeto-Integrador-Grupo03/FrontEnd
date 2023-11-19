@@ -7,19 +7,20 @@
 
 header #nav-flex {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
-   padding: 0 6rem;
    max-width: 100rem;
    margin: 0 auto;
    height: 7rem;
    font-family: 'Eczar', serif;
+   gap: 8rem;
 }
 
 header #nav-flex #div-flex {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
+   gap: 3rem;
 }
 
 header #nav-flex .link-nome {
@@ -80,23 +81,48 @@ header #nav-flex #ul-links li {
    padding-top: 0.6rem;
 }
 
-@media screen and (width <= 1242px) {
-   header #nav-flex {
-      padding: 0 2rem;
-      justify-content: initial;
-      gap: 5rem;
-   }
-
-   header #nav-flex #div-flex {
-      max-width: 20rem;
-   }
-
-   header #nav-flex #ul-links {
-      max-width: 20rem;
+@media screen and (width >= 1047px) {
+   div.hamb {
+      display: none;
    }
 }
 
-@media screen and (width <= 925px) {
+@media screen and (width <= 1338px) {
+
+   header #nav-flex {
+      padding: 0 2rem;
+      justify-content: space-evenly;
+      gap: 2rem;
+   }
+
+   header #nav-flex #div-flex {
+      max-width: 30rem;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 8rem;
+   }
+
+   header #nav-flex #ul-links {
+      font-size: 0.8rem;
+      max-width: 18rem;
+      gap: 2rem;
+   }
+
+   header #nav-flex .link-nome {
+      font-size: 2rem;
+   }
+}
+
+@media screen and (width <= 1047px) {
+
+   div.icones {
+      display: none;
+   }
+
+   header #nav-flex .link-nome {
+      font-size: 1.8rem;
+   }
 
    #nav-flex #div-flex {
       display: none;
@@ -108,13 +134,7 @@ header #nav-flex #ul-links li {
 
    nav#nav-flex {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
-   }
-}
-
-@media screen and (width <= 610px) {
-   nav#nav-flex {
-      padding: 0;
    }
 }

@@ -26,7 +26,7 @@ function Carrossel() {
             
                 slidesPerView={1}
                 spaceBetween={30}
-                loop={true}
+            loop={true}
                 pagination={{
                     clickable: true,
                 }}

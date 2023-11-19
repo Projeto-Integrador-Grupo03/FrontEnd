@@ -20,7 +20,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
 
   return (
     <div className="fonte">
-      <div className="borda flex h-[13rem]">
+      <div className="borda flex h-[13rem] cursor-pointer">
         <div
           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[9rem]"
           style={{
@@ -31,10 +31,10 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
         <div className=" flex flex-col w-full justify-evenly">
           <div className="flex flex-col gap-1 div-cima h-[5rem] px-[1.5rem]">
             <div className="flex flex-col items-start justify-between gap-2">
-              <h2 className="text-[#515961] font-[600] text-[1.5rem]">
+              <h2 className="nome-format text-[#515961] font-[600] text-[1.5rem]">
                 {post.nome}
               </h2>
-              <span className="font-[400] text-[0.75rem] text-[#515961]">
+              <span className="duracao-format inline-block font-[400] text-[0.75rem] text-[#515961] h-[3rem]">
                 {post.duracao}
               </span>
             </div>

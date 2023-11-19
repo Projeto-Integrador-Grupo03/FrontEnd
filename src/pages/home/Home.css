@@ -12,6 +12,24 @@ div#caixahome{
     margin-bottom: 3rem;
 }
 
+@media screen and (width <= 1120px) {
+    div#caixahome {
+        height: 25rem;
+    }
+}
+
+@media screen and (width <= 975px) {
+    div#caixahome {
+        height: 22rem;
+    }
+}
+
+@media screen and (width <= 760px) {
+    div#caixahome {
+        height: 15rem;
+    }
+}
+
 /*
 section #caixahome #conteudohome h1{
     color: #000;

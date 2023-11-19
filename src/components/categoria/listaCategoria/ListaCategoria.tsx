@@ -8,6 +8,8 @@ import CardCategoria from '../cardCategoria/CardCategoria';
 import { trefoil } from 'ldrs'
 trefoil.register('l-trefoil')
 
+import './ListaCategoria.css'
+
 
 function ListaCategoria() {
 
@@ -44,6 +46,14 @@ function ListaCategoria() {
 
   return (
     <>
+
+      <div className="flex justify-center items-center min-h-[30vh] w-[100%]">
+        <div className="w-[85%]">
+          <h1 className="padrao text-[5rem] text-[#515961]">Categorias</h1>
+          <hr className="separador w-full border-[0.15rem] rounded-sm" />
+        </div>
+      </div>
+
       {categorias.length === 0 && (
         <div className='flex items-center justify-center h-[90vh]'>
           <l-trefoil
@@ -58,8 +68,8 @@ function ListaCategoria() {
       )}
 
       <div className="flex justify-center w-full my-4">
-        <div className="container flex flex-col mx-[6rem]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
 
             {categorias.map((categoria) => (
               <CardCategoria key={categoria.id} categoria={categoria} />

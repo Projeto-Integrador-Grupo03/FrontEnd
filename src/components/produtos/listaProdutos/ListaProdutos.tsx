@@ -6,6 +6,8 @@ import { toastAlerta } from '../../../utils/toastAlerta';
 import { trefoil } from 'ldrs'
 trefoil.register('l-trefoil')
 
+import './ListaProdutos.css'
+
 
 
 function ListaProdutos() {
@@ -30,6 +32,14 @@ function ListaProdutos() {
     return (
 
         <>
+            <div className="flex justify-center items-center min-h-[30vh] w-[100%]">
+                <div className="w-[85%]">
+                    <h1 className="padrao text-[5rem] text-[#515961]">Produtos</h1>
+                    <hr className="separador w-full border-[0.15rem] rounded-sm" />
+                </div>
+            </div>
+
+
             {produtos.length === 0 && (
                 <div className='flex items-center justify-center h-[90vh]'>
                     <l-trefoil
@@ -43,8 +53,8 @@ function ListaProdutos() {
                 </div>
             )}
 
-            <div className='container mx-4 my-4
-            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
+            <div className='mx-4 my-4 px-2
+            grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4'>
 
                 {produtos.map((produto) => (
                     <CardProdutos key={produto.id} post={produto} />

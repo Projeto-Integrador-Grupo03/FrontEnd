@@ -21,3 +21,40 @@
     font-size: 0.8rem;
     font-weight: 300;
 }
+
+@media screen and (width <= 1160px) {
+    div.caixa {
+        width: 50rem;
+    }
+}
+
+@media screen and (width <= 930px) {
+    div.imagem {
+        display: none;
+    }
+
+    div.caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+    }
+}
+
+@media screen and (width <= 750px) {
+    div.caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+    }
+}
+
+@media screen and (width <= 670px) {
+    div.caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23rem;
+    }
+}

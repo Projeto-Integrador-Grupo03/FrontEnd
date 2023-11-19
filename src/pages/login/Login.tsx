@@ -21,7 +21,7 @@ function Login() {
         if (usuario.token !== "") {
             navigate('/home')
         }
-    }, [usuario])
+    }, [navigate, usuario])
 
     function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
         setUsuarioLogin({
@@ -38,7 +38,7 @@ function Login() {
     return (
 
         <div className='flex w-[100%] h-[40rem] justify-center items-center'>
-            <div className='w-[60rem] h-[38rem] flex justify-between mt-12 bg-white shadow-xl'>
+            <div className='caixa w-[60rem] h-[38rem] flex justify-between mt-12 bg-white shadow-xl'>
                 <div className='imagem fundoLogin w-[30rem] h-[10rem]'>
                 </div>
                 <div className='flex flex-col justify-center w-[30rem]'>

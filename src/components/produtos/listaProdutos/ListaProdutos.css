@@ -1,0 +1,9 @@
+﻿.padrao {
+  font-family: 'Inter', sans-serif;
+}
+
+@media screen and (width <= 1338px) {
+  h1.padrao {
+    font-size: 3.8rem;
+  }
+}

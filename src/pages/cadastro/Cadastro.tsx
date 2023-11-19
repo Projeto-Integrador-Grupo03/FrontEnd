@@ -24,13 +24,9 @@ function Cadastro() {
 
     useEffect(() => {
         if (usuario.id !== 0) {
-            retornar()
+            navigate('/login')
         }
-    }, [usuario])
-
-    function retornar() {
-        navigate('/login')
-    }
+    }, [navigate, usuario])
 
     function handleConfirmarSenha(e: ChangeEvent<HTMLInputElement>) {
         setConfirmaSenha(e.target.value)
