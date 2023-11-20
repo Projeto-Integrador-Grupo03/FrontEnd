@@ -16,6 +16,7 @@ import FormularioProdutos from './components/produtos/formularioProdutos/Formula
 import DeletarProduto from './components/produtos/deletarProdutos/DeletarProdutos';
 import 'react-toastify/dist/ReactToastify.css';
 import GridCarrinho from './pages/gridCarrinho/GridCarrinho';
+import Apoio from './components/apoio/Apoio';
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
             <Route path="/editarProdutos/:id" element={<FormularioProdutos />} />
             <Route path='/deletarProdutos/:id' element={<DeletarProduto />} />
             <Route path='/carrinho' element={<GridCarrinho />} />
+            <Route path='/apoio' element={<Apoio />} />
           </Routes>
         </div>
 
