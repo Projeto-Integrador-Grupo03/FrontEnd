@@ -37,8 +37,8 @@ export default function Hamburger() {
 
 
       <div className='div-flex'>
-        <Link to="/produtos" onClick={menuOnClick}><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
-        <Link to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
+        <Link onClick={Hamburger} to="/produtos"><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
+        <Link onClick={Hamburger} to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
         <Link to="/"><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
         <Link to="/contato"><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
         <Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>
