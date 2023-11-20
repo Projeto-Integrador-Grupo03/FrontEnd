@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom';
 import { ShoppingCart, SignOut } from '@phosphor-icons/react/dist/ssr';
 import './Hamburguer.css'
 import { toastAlerta } from '../../utils/toastAlerta';
+import { useState } from 'react';
 
 
 export default function Hamburger() {
 
   const { usuario, handleLogout } = useContext(AuthContext)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   function logout() {
     if (usuario.token === '') {
@@ -19,17 +21,26 @@ export default function Hamburger() {
     }
   }
 
-  function menuOnClick() {
+  function toggleMenu() {
+    setMenuOpen(!menuOpen);
+  }
+
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
+/*  function menuOnClick() {
     document.getElementById("menu-bar").classList.toggle("change");
     document.getElementById("nav").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
-  }
+  }*/
+
 
   return (
-    <aside className="menu">
+    <aside className={`menu ${menuOpen ? 'open' : ''}`}>
 
       
-      <input type="checkbox" className='trigger'/>
+  <input type="checkbox" className='trigger' onChange={toggleMenu} checked={menuOpen} />
 
       <div className="menu-lines">
         <span></span>
@@ -39,8 +50,8 @@ export default function Hamburger() {
 
 
       <div className='div-flex'>
-        <Link to="/produtos" onClick={menuOnClick}><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
-        <Link to="/categorias" onClick={menuOnClick}><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
+        <Link to="/produtos" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
+        <Link to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
         <Link to="/"><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
         <Link to="/contato"><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
         <Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>
