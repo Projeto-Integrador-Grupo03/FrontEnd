@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Produto from "../../../models/Produto";
 import { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthContext";
-import { MinusCircle, Plus, ShoppingCart } from "@phosphor-icons/react";
+import { Plus, ShoppingCart } from "@phosphor-icons/react";
 import "./CardProduto.css";
 
 interface CardProdutosProps {

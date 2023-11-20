@@ -47,7 +47,7 @@ function ListaCategoria() {
   return (
     <>
 
-      <div className="flex justify-center items-center min-h-[30vh] w-[100%]">
+      <div className="flex justify-center items-center min-h-[10vh] w-[100%]">
         <div className="w-[85%]">
           <h1 className="padrao text-[5rem] text-[#515961]">Categorias</h1>
           <hr className="separador w-full border-[0.15rem] rounded-sm" />
@@ -69,11 +69,11 @@ function ListaCategoria() {
 
       <div className="flex justify-center w-full my-4">
         <div className="flex flex-col">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+          <div className="responsividade gap-14">
 
-            {categorias.map((categoria) => (
-              <CardCategoria key={categoria.id} categoria={categoria} />
-            ))}
+          {categorias.map((categoria) => (
+            <CardCategoria key={categoria.id} categoria={categoria} />
+          ))}
 
           </div>
         </div>
