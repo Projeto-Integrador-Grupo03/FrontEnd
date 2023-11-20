@@ -54,7 +54,7 @@ export default function Hamburger() {
         <Link to="/categorias" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
         <Link to="/apoio" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
         <Link to="/contato" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
-        {usuario.token === '' ? (<Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>)
+        {usuario.token === '' ? (<Link to="/login" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Login</li></Link>)
           : ('')}
         <div className='flex justify-evenly w-[100%]'>
           <Link to="/" onClick={closeMenu}><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
