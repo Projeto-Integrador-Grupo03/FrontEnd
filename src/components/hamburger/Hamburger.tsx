@@ -52,7 +52,7 @@ export default function Hamburger() {
       <div className='div-flex'>
         <Link to="/produtos" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
         <Link to="/categorias" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
-        <Link to="/" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
+        <Link to="/apoio" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
         <Link to="/contato" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
         <Link to="/login" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Login</li></Link>
         <div className='flex justify-evenly w-[100%]'>
