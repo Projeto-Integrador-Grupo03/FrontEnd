@@ -35,9 +35,9 @@ function GridCarrinho() {
 
     return (
         <>
-            <div className="flex justify-center items-center min-h-[40vh] w-[100%]">
+            <div className="flex justify-center items-center min-h-[35vh] w-[100%]">
                 <div className="w-[85%]">
-                    <h1 className="padrao text-[3rem] text-[#515961]">Resumo da compra</h1>
+                    <h1 className="padrao text-[2.5rem] text-[#515961]">Resumo da compra</h1>
                     <hr className="separador w-full border-[0.15rem] rounded-sm" />
                 </div>
             </div>

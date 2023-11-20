@@ -35,37 +35,39 @@ font-family: 'Open Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (width <=1100px) {
-  .wrap2 {
-    max-width: 900px;
-  }
+@media screen and (width <= 1160px) {
+    div.caixa {
+        width: 50rem;
+    }
 }
 
-@media screen and (width <=920px) {
+@media screen and (width <= 930px) {
+    div.imagem {
+        display: none;
+    }
 
-  .wrap {
-    display: flex;
-    align-content: center;
-  }
-
-  .wrap2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .wrap .wrap2 .imagem {
-    display: none;
-  }
-
-  .wrap .wrap2 .form {
-    width: 100%;
-  }
+    div.caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+    }
 }
 
-@media screen and (width <=768px) {
-  .wrap {
-    max-width: 768px;
-  }
+@media screen and (width <= 750px) {
+    div.caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+    }
+}
+
+@media screen and (width <= 670px) {
+    div.caixa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23rem;
+    }
 }

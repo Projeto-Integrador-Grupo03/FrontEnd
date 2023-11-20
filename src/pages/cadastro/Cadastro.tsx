@@ -64,7 +64,7 @@ function Cadastro() {
 
     return (
         <div className='flex w-[100%] h-[40rem] justify-center items-center'>
-            <div className='w-[60rem] h-[38rem] flex justify-between mt-12 bg-white shadow-xl'>
+            <div className='caixa w-[60rem] h-[38rem] flex justify-between mt-12 bg-white shadow-xl'>
 
                 <div className='w-[30rem]'>
                     <form className='flex flex-col items-center justify-center pt-[0.8rem] h-[0.5]' onSubmit={cadastrarNovoUsuario}>

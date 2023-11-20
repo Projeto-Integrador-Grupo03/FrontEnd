@@ -22,7 +22,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
 
   return (
     <div className="fonte">
-      <div className="borda flex h-[13rem] cursor-pointer">
+      <div className="borda flex h-[11.5rem] w-[35rem] cursor-pointer">
         <div
           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[9rem]"
           style={{
@@ -30,17 +30,17 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
           }}
         ></div>
 
-        <div className=" flex flex-col w-full justify-evenly">
-          <div className="flex flex-col gap-1 div-cima h-[5rem] px-[1.5rem]">
+        <div className="div-acima-cima flex flex-col w-full justify-evenly">
+          <div className="div-cima flex flex-col gap-1 h-[5rem] px-[1.5rem]">
             <div className="flex flex-col items-start justify-between gap-2">
-              <h2 className="nome-format text-[#515961] font-[600] text-[1.5rem]">
+              <h2 className="nome-format text-[#515961] font-[700] text-[1.1rem]">
                 {post.nome}
               </h2>
-              <span className="duracao-format inline-block font-[400] text-[0.75rem] text-[#515961] h-[3rem]">
+              <span className="duracao-format inline-block font-[400] text-[0.7rem] text-[#515961] h-[3rem] mb-5">
                 {post.duracao}
               </span>
             </div>
-            <span className="font-[650] text-[#515961]">
+            <span className="categoria-format font-[600] text-[#515961] text-[0.8rem]">
               Categoria: {post.categoria?.nome}
             </span>
           </div>
