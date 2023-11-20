@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Produto from "../../../models/Produto";
 import { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthContext";
-import { Plus, ShoppingCart } from "@phosphor-icons/react";
+import { Plus, ShoppingCart,Trash, PencilSimple } from "@phosphor-icons/react";
 import "./CardProduto.css";
 
 interface CardProdutosProps {
@@ -47,7 +47,26 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
 
           <div className="div-baixo flex items-end justify-between h-[5rem] px-[1.5rem]">
             <div className="flex flex-col gap-3">
-              <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md" onClick={() => adicionarProduto(post)}>
+
+              {usuario.usuario === "root@root.com.br" ? (
+          <div className="flex gap-3">
+            <Link
+              to={`/editarProdutos/${post.id}`}
+              className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-md"
+            >
+              <button>
+                <i><PencilSimple size={16} weight="bold" color="#f5f5f5"/></i></button>
+            </Link>
+            <Link
+              to={`/deletarProdutos/${post.id}`}
+              className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-md"
+            >
+              <button>
+                <i><Trash size={16} weight="bold" color="#f5f5f5"/></i></button>
+            </Link>
+          </div>
+        ) : (
+          <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md" onClick={() => adicionarProduto(post)}>
                 <i>
                   <ShoppingCart size={24} weight="fill" color="#f5f5f5" />
                 </i>
@@ -55,6 +74,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
                   <Plus size={14} weight="bold" color="#f5f5f5" />
                 </i>
               </button>
+        )}
 
               {/*<button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#8673d9] rounded-md" onClick={() => removerProduto(post.id)}>
                 <i>
@@ -71,27 +91,6 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
             </span>
           </div>
         </div>
-
-        {usuario.usuario === "root@root.com.br" ? (
-          <div className="flex">
-            <Link
-              to={`/editarProdutos/${post.id}`}
-              className="w-full text-white bg-indigo-400 
-                        hover:bg-indigo-800 flex items-center justify-center py-2"
-            >
-              <button>Editar</button>
-            </Link>
-            <Link
-              to={`/deletarProdutos/${post.id}`}
-              className="text-white bg-red-400 
-                        hover:bg-red-700 w-full flex items-center justify-center rounded-r-[1.8rem]"
-            >
-              <button>Deletar</button>
-            </Link>
-          </div>
-        ) : (
-          ""
-        )}
       </div>
     </div>
   );

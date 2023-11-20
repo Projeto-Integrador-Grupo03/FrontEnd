@@ -223,8 +223,7 @@ function FormularioProdutos() {
                 <button
                     type='submit'
                     disabled={carregandoCategoria}
-                    className='flex justify-center rounded disabled:bg-slate-200 bg-indigo-400 
-                            hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto py-2'
+                    className='bg-[#D973AB] botaouser text-[0.85rem] font-[400] text-[#ffff] rounded text-slate-100 w-1/2 py-2 mx-auto flex justify-center'
                 >
                     {isLoading ?
                         <RotatingLines
