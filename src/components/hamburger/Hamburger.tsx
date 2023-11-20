@@ -20,7 +20,7 @@ export default function Hamburger() {
   }
 
   function menuOnClick() {
-    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("trigger").classList.toggle("change");
   }
 
   return (
