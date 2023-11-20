@@ -19,11 +19,15 @@ export default function Hamburger() {
     }
   }
 
+  function menuOnClick() {
+    document.getElementById("menu").classList.toggle("change");
+  }
+
   return (
     <aside className="menu">
 
       
-      <input type="checkbox" className='trigger' />
+      <input type="checkbox" className='trigger'/>
 
       <div className="menu-lines">
         <span></span>
@@ -33,13 +37,13 @@ export default function Hamburger() {
 
 
       <div className='div-flex'>
-        <Link to="/produtos"><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
-        <Link to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
-        <Link to="/"><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
-        <Link to="/contato"><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
-        <Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>
+        <Link onClick={menuOnClick} to="/produtos"><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
+        <Link onClick={menuOnClick} to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
+        <Link onClick={menuOnClick} to="/"><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
+        <Link onClick={menuOnClick} to="/contato"><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
+        <Link onClick={menuOnClick} to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>
         <div className='flex justify-evenly w-[100%]'>
-          <Link to="/"><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
+          <Link onClick={menuOnClick} to="/"><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
           <Link onClick={logout} to="/login"><li><i className='link-format cursor-pointer'><SignOut size={28} color="#fff5f5" weight="bold" /></i></li></Link>
         </div>
       </div>
