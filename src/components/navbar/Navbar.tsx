@@ -33,7 +33,8 @@ function Navbar() {
                   <Link to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
                   <Link to="/apoio"><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
                   <Link to="/contato"><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
-                  <Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>
+                  {usuario.token === '' ? (<Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>)
+                  : ('')}
                </ul>
 
                <div className='icones flex items-center gap-5 list-none'>

@@ -29,18 +29,18 @@ export default function Hamburger() {
     setMenuOpen(false);
   }
 
-/*  function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-  }*/
+  /*  function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }*/
 
 
   return (
     <aside className={`menu ${menuOpen ? 'open' : ''}`}>
 
-      
-  <input type="checkbox" className='trigger' onChange={toggleMenu} checked={menuOpen} />
+
+      <input type="checkbox" className='trigger' onChange={toggleMenu} checked={menuOpen} />
 
       <div className="menu-lines">
         <span></span>
@@ -54,14 +54,15 @@ export default function Hamburger() {
         <Link to="/categorias" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
         <Link to="/apoio" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
         <Link to="/contato" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
-        <Link to="/login" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Login</li></Link>
+        {usuario.token === '' ? (<Link to="/login"><li className='link-format text-[white] font-[700]'>Login</li></Link>)
+          : ('')}
         <div className='flex justify-evenly w-[100%]'>
           <Link to="/" onClick={closeMenu}><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
           <Link onClick={logout} to="/login"><li><i className='link-format cursor-pointer'><SignOut size={28} color="#fff5f5" weight="bold" /></i></li></Link>
         </div>
       </div>
 
-      
+
     </aside>
   )
 }
