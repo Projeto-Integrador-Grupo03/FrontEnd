@@ -77,12 +77,12 @@ function Login() {
                             </div>
                             <div className='usuario2 flex flex-col justify-center items-center gap-[1.3rem] mt-[0.5rem]'>
                                 <button className='flex items-center justify-center w-[8.5rem] h-[3rem] bg-[#D973AB] rounded-md botaouser text-[0.7rem] font-[400] text-[#ffff]' type='submit'>
-                                    {isLoading ? <RotatingLines
-                                        strokeColor="white"
-                                        strokeWidth="5"
-                                        animationDuration="0.75"
-                                        width="24"
-                                        visible={true}
+                                    {isLoading ? <l-jelly
+                                        color={'#f5f5f5'}
+                                        size={22}
+                                        speed={0.7}
+                                        stroke-length={0.10}
+                                        bg-opacity={0.22}
                                     /> : <span className='text-[0.85rem]'>Login</span>}
                                 </button>
                                 <p>

@@ -1,61 +1,298 @@
 import '../contato/Contato.css'
+
 function Contato() {
-   return (<section>
-      <div id='teste'>
-         <div id='dentro'>
+   return (
+      <>
+         <div className=' divtime w-[100%] flex justify-center items-center'>
+            <div id='caixahome2'>
+               <h1 className='text-[#515961] '>Iniciativa Atena</h1>
 
-            <div id='foto'>
-               <div id='foto-dentro'>
+               <p className='text-[#515961]'>Com sua inspiração atemporal, Atena emerge como o símbolo perfeito para representar este e-commerce, cujo propósito é promover produtos e serviços dedicados ao empoderamento feminino.
+                  Esse compromisso visa abordar questões de vulnerabilidade de gênero, como a desigualdade no mercado de trabalho e situações de assédio/violência.</p>
+
+               <p className='text-[#515961]'>
+                  Atena é uma das principais deidades da mitologia grega, associada a diversas áreas como a sabedoria, estratégia, justiça, habilidade, inspiração, artes, guerra e civilização. É conhecida pela sua inteligência estratégica e sabedoria. Ela é uma figura complexa que representa não apenas a guerra, mas também a civilização e o intelecto, refletindo o equilíbrio entre a força e a sabedoria.
+                  Com sua inspiração atemporal, Atena emerge como o símbolo perfeito para representar este e-commerce, cujo propósito é promover produtos e serviços dedicados ao empoderamento feminino. Esse compromisso visa abordar questões de vulnerabilidade de gênero, como a desigualdade no mercado de trabalho e situações de assédio/violência.
+               </p>
+
+               <div className="atenafoto">
+                  <img src="src/assets/img/atena.png" alt="Imagem da Atena" />
                </div>
             </div>
-
-            <div id='info-top'>
-
-               <div id='esquerda'>
-
-                  <span id='titulo-curso'>
-                     Curso Yoga
-                  </span>
-
-                  <span id='valor-unitario'>
-                     R$15,00
-                  </span>
-                  
-                  <div id='flex-quantidade'>
-                     <select name="" id="select">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                     </select>
-
-                     <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAY1BMVEX///8AAAB0dHTx8fFra2uAgIB
-                        9fX3t7e3q6ur19fVBQUE0NDQtLS1JSUmEhIT8/Py6uro5OTkjIyPFxcUZGRmKiopjY2NaWlrLy8seHh4QEBDd3d2ampqvr6+mpqYoKCiSkpIVBMHlAAADU
-                        UlEQVRoge2b63aqMBBGiVLkUgVvgOKl7/+Ux0y4JSQB6UxcZ5XvF2LLLkm2k5rgeaTJ/MvFz2gZmqy3DBJv3HLDmNV5hu65p5Nr8ga4qzD8Ar6z1l7vgcsP
-                        d/zo4Igcfbdcp2SJ25DX9Nw1cIPuxBn6mXyEbaB/v/qnzi7GtvDoSz65oycLbqCeJifX/g7fAPKJbIT1/NWSqaxSPHJGjhILl5As/M3NP0Dks/CXMUvlJ/G5q78
-                        WsrAKtbUFN59EjhG5jb/HSeQ7GrfzNwPy0fyjwevtAovb93eMHF4ZuxJwvbq1jeSQoYHV+lta+zm3u/5GhvXXRs5HBt/06OqvmewzrLGlr78mq4C7jRC4pvqb
-                        ackr4GIUZXP91ViV4nFTS/0dkoEbY3CtdX/gM3ATjP4dzJ+VyGMbxtU+ReBq5s8WMnATDK52/mwkAzfGaGfD/FlJ4zO9v2rE2C4c+Ksnu/BXjWhtF/6qyZ35K
-                        8elvwOuM38VLopH0/yVuRjjaqq/Ii7qryaI9fc9jz7KXfydkRn+Oqy/Enfxd0ZmeITSv+/U/Q/7myBgF3/HuYu/M7L4awueRzP8Ran7H/N3u/hrTBp8yN/gQ///
-                        QjvvF3/fz+KvLX+t/i7+zs2fmz//R/6iLHy/w0Wsv+JL5alLfnj+1tsVJi5y4s2fX2FsMhnPI0+sYk8ko3K9B7/YZQoZz9/2cpl9hb3HxRnPEH65cHwPB6a/EH6v/Ov7
-                        ETJi/a3z87rervkLzGRMfyEpX4Er4dB2z6j+Qtb8ivUFR/YzoHkE4ct/fvPCup8BlwtteGtf6cnI/kIiPvOoutc6Mra/kOp1zUP/xJCM7hHkMajEChmz/vYDy6zyLiiZjO
-                        6vSAjFwULG91ek1FbEjkzhESTQ12JpP8M3ATfl07wbUOS9g4JcEPgrwmW6at0tL3VT4I9nnjuDLXSD/VdReE8ouV5Rt7G0Fyk67rZN1xM9yhIdms/Ldv9VdctZF3x/
-                        RbhMT3Eo7nl16lGvZ8uW0t+lnXzUx734d8pnKvgA4pOP6lH0ocWtGv3VX2XDPx2qcvXs92qQUXgrh4+oa496yB8VPdWrdzs3Iyk+l86eiDq0t+pnxL0qR7RyfCsJqoA1
-                        VZL8HB08iaTmH26WKGvhEQbwAAAAAElFTkSuQmCC" /></div>
-                  </div>
-
-               </div>
-
-               <div id='direita'>
-                  <span>
-                     R$30,00
-                  </span>
-               </div>
-
-            </div>
-
          </div>
-      </div>
-   </section>)
+
+         <section className=" #f5f5f5 dark:#f5f5f5 mb-10">
+            {/* Div sobre equipe */}
+
+            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6 md:grid-cols-1 lg:grid-cols-2 ">
+
+               <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+
+                  <h2 className="mb-4 text-3xl tracking-tight font-bold text-[#515961] dark:text-white font-[Inter]">Nosso Time</h2>
+
+                  {/* <p className="font-[Inter] text-[#515961] lg:mb-16 sm:text-xl dark:text-gray-400">
+                     Frase bonita
+                  </p> */}
+
+                  {/* Div Nosso time */}
+                  <div className="flex flex-wrap justify-center mt-10 gap-4">
+
+                     {/* Card - Anderson */}
+                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
+
+                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
+
+                           <img
+                              className="rounded-lg w-52"
+                              src="src\assets\img\anderson.JPG " alt=" Anderson Foto" />
+
+                           <div className="flex flex-col items-center p-2">
+                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">ANDERSON ALVES</h2>
+                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
+                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
+
+
+                              <div className="flex flex-col justify-between flex-grow">
+                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
+                                 </p>
+                              </div>
+
+                              <ul className="display: inline-flex space-x-4">
+                                 <li>
+                                    <a target='_blank' href="https://www.linkedin.com/in/anderson-alves/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
+                                          <path d="M3 5.012H0V15h3V5.012Z" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a target='_blank' href="https://github.com/ander-alves" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     {/* Card - Fernando*/}
+                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
+
+                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
+
+                           <img
+                              className="rounded-lg w-52"
+                              src="src\assets\img\fernando.JPG" alt=" Fernando Foto" />
+
+                           <div className="flex flex-col items-center p-2">
+                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter] ">FERNANDO DIAS</h2>
+                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
+                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
+
+
+                              <div className="flex flex-col justify-between flex-grow">
+                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
+                                 </p>
+                              </div>
+
+                              <ul className="display: inline-flex space-x-4">
+                                 <li>
+                                    <a target='_blank' href="https://www.linkedin.com/in/fernandodiascosta-dotnet/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
+                                          <path d="M3 5.012H0V15h3V5.012Z" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a target='_blank' href="https://github.com/Fertilesoil" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     {/* Card - Gaspar */}
+                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
+
+                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
+
+                           <img
+                              className="rounded-lg w-52"
+                              src="src\assets\img\gaspar.JPG" alt=" Gaspar Foto" />
+
+                           <div className="flex flex-col items-center p-2">
+                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">GASPAR LEONARDI</h2>
+                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
+                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
+
+
+                              <div className="flex flex-col justify-between flex-grow">
+                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
+                                 </p>
+                              </div>
+
+                              <ul className="display: inline-flex space-x-4">
+                                 <li>
+                                    <a target='_blank' href="https://www.linkedin.com/in/gasparleonardi/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
+                                          <path d="M3 5.012H0V15h3V5.012Z" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a target='_blank' href="https://github.com/GasparLeonardi" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     {/* Card - Karina */}
+                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
+
+                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
+
+                           <img
+                              className="rounded-lg w-52"
+                              src="src\assets\img\karina.JPG" alt=" Karina Foto" />
+
+                           <div className="flex flex-col items-center p-2">
+                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">KARINA AKINA</h2>
+                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
+                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
+
+
+                              <div className="flex flex-col justify-between flex-grow">
+                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
+                                 </p>
+                              </div>
+
+                              <ul className="display: inline-flex space-x-4">
+                                 <li>
+                                    <a target='_blank' href="https://www.linkedin.com/in/karinamiyazaki//" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
+                                          <path d="M3 5.012H0V15h3V5.012Z" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a target='_blank' href="https://github.com/karinamzk" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     {/* Card - Samantha */}
+                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
+
+                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
+
+                           <img
+                              className="rounded-lg w-52"
+                              src="src\assets\img\samantha.JPG" alt=" Samantha Foto" />
+
+                           <div className="flex flex-col items-center p-2">
+                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">SAMANTHA BLAZIZZA</h2>
+                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
+                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
+
+
+                              <div className="flex flex-col justify-between flex-grow">
+                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
+                                 </p>
+                              </div>
+
+                              <ul className="display: inline-flex space-x-4">
+                                 <li>
+                                    <a target='_blank' href="https://www.linkedin.com/in/samanthablazizza/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
+                                          <path d="M3 5.012H0V15h3V5.012Z" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a target='_blank' href="https://github.com/samanthablazizza" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     {/* Card - Valéria */}
+                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
+
+                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
+
+                           <img
+                              className="rounded-lg w-52"
+                              src="src\assets\img\valeria.JPG" alt=" Valéria Foto" />
+
+                           <div className="flex flex-col items-center p-2">
+                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">VALÉRIA CARVALHO</h2>
+                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
+                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
+
+
+                              <div className="flex flex-col justify-between flex-grow">
+                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
+                                 </p>
+                              </div>
+
+                              <ul className="display: inline-flex space-x-4">
+                                 <li>
+                                    <a target='_blank' href="https://www.linkedin.com/in/val%C3%A9ria-carvalho/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
+                                          <path d="M3 5.012H0V15h3V5.012Z" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a target='_blank' href="https://github.com/dValsc" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
+                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </>
+   );
 }
-export default Contato
+export default Contato;
