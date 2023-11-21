@@ -108,7 +108,7 @@ function FormularioCategoria() {
     } 
     
     return (
-        <div className="container flex flex-col items-center justify-center mx-auto">
+        <div className="container flex flex-col items-center justify-center mx-auto font-[Inter] text-[#515961]">
             <h1 className="text-4xl text-center my-8">
                 {id === undefined ? 'Cadastrar Categoria' : 'Editar Categoria'}
             </h1>
@@ -119,7 +119,7 @@ function FormularioCategoria() {
                         type="text"
                         placeholder="Descreva aqui sua categoria"
                         name='nome'
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                         value={categoria.nome}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
@@ -130,7 +130,7 @@ function FormularioCategoria() {
                         type="text"
                         placeholder="Descreva aqui sua categoria"
                         name='descricao'
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                         value={categoria.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />

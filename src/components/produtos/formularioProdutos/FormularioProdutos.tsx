@@ -132,7 +132,7 @@ function FormularioProdutos() {
     const carregandoCategoria = categoria.nome === '';
 
     return (
-        <div className="container flex flex-col mx-auto items-center">
+        <div className="container flex flex-col mx-auto items-center font-[Inter] text-[#515961]">
             <h1 className="text-4xl text-center my-8">
                 {id !== undefined ? 'Editar Produto' : 'Cadastrar Produto'}
             </h1>
@@ -147,7 +147,7 @@ function FormularioProdutos() {
                         placeholder="Insira aqui o Nome"
                         name="nome"
                         required
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                     />
                 </div>
 
@@ -161,7 +161,7 @@ function FormularioProdutos() {
                         placeholder="Adicione aqui a Duração da Postagem"
                         name="duracao"
                         required
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -174,7 +174,7 @@ function FormularioProdutos() {
                         placeholder="Adicione aqui o Valor do Produto"
                         name="valor"
                         required
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -187,7 +187,7 @@ function FormularioProdutos() {
                         placeholder="Adicione aqui a Quantidade do Produto"
                         name="quantidade"
                         required
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -200,7 +200,7 @@ function FormularioProdutos() {
                         placeholder="Adicione aqui a url da Foto"
                         name="foto"
                         required
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                     />
                 </div>
 
@@ -209,7 +209,7 @@ function FormularioProdutos() {
 
                 <div className="flex flex-col gap-2">
                     <p>Categoria do Produto</p>
-                    <select name="tema" id="tema" className='border p-2 border-slate-800 rounded'
+                    <select name="tema" id="tema" className='border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]'
                         onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}
                     >
                         <option value="" selected disabled>Selecione uma Categoria</option>
