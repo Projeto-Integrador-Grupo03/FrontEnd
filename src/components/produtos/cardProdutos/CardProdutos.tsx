@@ -16,13 +16,12 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
     style: "currency",
     currency: "BRL",
   });
-  console.log(formattedNumber);
 
   const { adicionarProduto, removerProduto } = useContext(AuthContext)
 
   return (
     <div className="fonte">
-      <div className="borda flex h-[11.5rem] w-[35rem] cursor-pointer">
+      <div className="borda flex h-[11.5rem] w-[35rem]">
         <div
           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[9rem]"
           style={{

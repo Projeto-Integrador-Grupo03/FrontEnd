@@ -18,6 +18,7 @@ export default function Hamburger() {
     } else {
       handleLogout()
       toastAlerta('Obrigado por usar nosso site!', 'default')
+      closeMenu()
     }
   }
 

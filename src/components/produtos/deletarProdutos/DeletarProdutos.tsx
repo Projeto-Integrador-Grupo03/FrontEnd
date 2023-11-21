@@ -1,12 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom"
-import { RotatingLines } from "react-loader-spinner";
 import { toastAlerta } from "../../../utils/toastAlerta";
 import { buscar, deletar } from "../../../services/Service";
 import { AuthContext } from "../../../contexts/AuthContext";
-
 import Produto from "../../../models/Produto";
+import { CheckCircle, XCircle } from "@phosphor-icons/react";
+import { jelly } from "ldrs";
+jelly.register('l-jelly')
+import './DeletarProdutos.css'
+
 
 function DeletarProduto() {
 
@@ -72,45 +75,51 @@ function DeletarProduto() {
         navigate("/produtos")
     }
 
+
     return (
-        <div className='container w-1/3 mx-auto'>
-            <h1 className='text-4xl text-center my-4'>Deletar Produto</h1>
+        <div className='flex flex-col justify-center items-center min-h-[90vh] gap-4'>
 
-            <p className='text-center font-semibold mb-4'>
-                Você tem certeza de que deseja apagar o Produto a seguir?
-            </p>
+            <h1 className="text-[2.5rem] font-[300] font-[Inter] text-center text-[#515961]">Deseja deletar este produto?</h1>
 
-            <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-                <header className='py-2 px-6 bg-indigo-600 text-white font-bold text-2xl'>
-                    Tema
-                </header>
-                <p className='p-8 text-3xl bg-slate-200 h-full'>{produto.nome}</p>
+            <div className="borda flex h-[11.5rem] w-[35rem]">
+                <div
+                    className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[9rem]"
+                    style={{
+                        backgroundImage: `url(${produto.foto})`
+                    }}
+                ></div>
 
-                <div className="flex">
+                <div className="div-acima-cima flex flex-col w-full justify-evenly">
+                    <div className="div-cima flex flex-col gap-1 h-[5rem] px-[1.5rem]">
+                        <div className="flex flex-col items-start justify-between gap-2">
+                            <h2 className="nome-format text-[#515961] font-[700] text-[1.1rem]">
+                                {produto.nome}
+                            </h2>
+                        </div>
+                
+                    </div>
 
-                    <button
-                        className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2'
-                        onClick={retornar}>
-                        Não
-                    </button>
+                    <div className="div-baixo flex items-end justify-between h-[5rem] px-[1.5rem]">
+                        <div className="flex gap-3">
+                            <button onClick={deletarProduto}
+                                className="flex justify-center items-center text-center border-none outline-none w-[10.5rem] p-[0.60rem] shadow-md bg-[#F29494] rounded-l-md"
+                            >
+                                {isLoading ?
+                                    <l-jelly
+                                        color={'#f5f5f5'}
+                                        size={22}
+                                        speed={0.7}
+                                        stroke-length={0.10}
+                                        bg-opacity={0.22}
+                                    /> :
+                                    <i><CheckCircle size={20} color="#fff5f5" weight="bold" /></i>
+                                }
+                            </button>
 
-                    <button
-                        className='w-full text-slate-100 bg-indigo-400 hover:bg-indigo-600 
-                            flex items-center justify-center'
-                        onClick={deletarProduto}>
-
-                        {isLoading ?
-                            <RotatingLines
-                                strokeColor="white"
-                                strokeWidth="5"
-                                animationDuration="0.75"
-                                width="24"
-                                visible={true}
-                            /> :
-                            <span>Sim</span>
-                        }
-                    </button>
-
+                            <button className="flex justify-center items-center text-center border-none outline-none w-[10.5rem] p-[0.60rem] shadow-md bg-[#D97398] rounded-r-md" onClick={retornar}>
+                                <i><XCircle size={20} color="#fff5f5" weight="bold" /></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -13,10 +13,10 @@ import ListaCategoria from './components/categoria/listaCategoria/ListaCategoria
 import DeletarCategoria from './components/categoria/deletarCategoria/DeletarCategoria';
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 import FormularioProdutos from './components/produtos/formularioProdutos/FormularioProdutos';
-import DeletarProduto from './components/produtos/deletarProdutos/DeletarProdutos';
 import 'react-toastify/dist/ReactToastify.css';
 import GridCarrinho from './pages/gridCarrinho/GridCarrinho';
 import Apoio from './components/apoio/Apoio';
+import DeletarProduto from './components/produtos/deletarProdutos/DeletarProdutos';
 
 function App() {
 
