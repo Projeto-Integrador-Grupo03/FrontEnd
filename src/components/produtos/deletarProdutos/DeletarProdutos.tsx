@@ -10,7 +10,6 @@ import { jelly } from "ldrs";
 jelly.register('l-jelly')
 import './DeletarProdutos.css'
 
-
 function DeletarProduto() {
 
     const navigate = useNavigate()
@@ -75,9 +74,8 @@ function DeletarProduto() {
         navigate("/produtos")
     }
 
-
     return (
-        <div className='flex flex-col justify-center items-center min-h-[90vh] gap-4'>
+        <div className='flex flex-col justify-center items-center min-h-[90vh] gap-4 mx-4'>
 
             <h1 className="text-[2.5rem] font-[300] font-[Inter] text-center text-[#515961]">Deseja deletar este produto?</h1>
 
@@ -92,17 +90,22 @@ function DeletarProduto() {
                 <div className="div-acima-cima flex flex-col w-full justify-evenly">
                     <div className="div-cima flex flex-col gap-1 h-[5rem] px-[1.5rem]">
                         <div className="flex flex-col items-start justify-between gap-2">
-                            <h2 className="nome-format text-[#515961] font-[700] text-[1.1rem]">
+                            <h2 className="nome-format text-justify text-[#515961] font-[700] text-[1.1rem]">
                                 {produto.nome}
                             </h2>
+                            <span className="duracao-format text-justify indent-2 inline-block font-[400] text-[0.7rem] text-[#515961] h-[3rem]">
+                                {produto.duracao}
+                            </span>
                         </div>
-                
+                        <span className="categoria-format text-justify font-[600] text-[#515961] text-[0.8rem]">
+                            Categoria: {produto.categoria?.nome}
+                        </span>
                     </div>
 
-                    <div className="div-baixo flex items-end justify-between h-[5rem] px-[1.5rem]">
+                    <div className="div-baixo flex items-end justify-center h-[5rem] px-[2rem]">
                         <div className="flex gap-3">
                             <button onClick={deletarProduto}
-                                className="flex justify-center items-center text-center border-none outline-none w-[10.5rem] p-[0.60rem] shadow-md bg-[#F29494] rounded-l-md"
+                                className="flex justify-center items-center text-center border-none outline-none w-[5rem] p-[0.60rem] shadow-md bg-[#F29494] rounded-md"
                             >
                                 {isLoading ?
                                     <l-jelly
@@ -116,7 +119,7 @@ function DeletarProduto() {
                                 }
                             </button>
 
-                            <button className="flex justify-center items-center text-center border-none outline-none w-[10.5rem] p-[0.60rem] shadow-md bg-[#D97398] rounded-r-md" onClick={retornar}>
+                            <button className="flex justify-center items-center text-center border-none outline-none w-[5rem] p-[0.60rem] shadow-md bg-[#D97398] rounded-md" onClick={retornar}>
                                 <i><XCircle size={20} color="#fff5f5" weight="bold" /></i></button>
                         </div>
                     </div>

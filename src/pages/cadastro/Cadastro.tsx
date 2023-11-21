@@ -137,7 +137,7 @@ function Cadastro() {
                                     </Link>
                                 </p>
 
-                                <button className='w-[8.5rem] h-[3rem] bg-[#D973AB] rounded-md botaouser text-[0.85rem] font-[400] text-[#ffff]' type='submit'>
+                                <button className='flex justify-center items-center w-[8.5rem] h-[3rem] bg-[#D973AB] rounded-md botaouser text-[0.85rem] font-[400] text-[#ffff]' type='submit'>
                                     {isLoading ? <RotatingLines
                                         strokeColor="white"
                                         strokeWidth="5"

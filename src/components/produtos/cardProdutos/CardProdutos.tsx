@@ -32,14 +32,14 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
         <div className="div-acima-cima flex flex-col w-full justify-evenly">
           <div className="div-cima flex flex-col gap-1 h-[5rem] px-[1.5rem]">
             <div className="flex flex-col items-start justify-between gap-2">
-              <h2 className="nome-format text-[#515961] font-[700] text-[1.1rem]">
+              <h2 className="nome-format text-justify text-[#515961] font-[700] text-[1.1rem]">
                 {post.nome}
               </h2>
-              <span className="duracao-format inline-block font-[400] text-[0.7rem] text-[#515961] h-[3rem] mb-5">
+              <span className="duracao-format indent-2 text-justify inline-block font-[400] text-[0.7rem] text-[#515961] h-[3rem] mb-5">
                 {post.duracao}
               </span>
             </div>
-            <span className="categoria-format font-[600] text-[#515961] text-[0.8rem]">
+            <span className="categoria-format text-justify font-[600] text-[#515961] text-[0.8rem]">
               Categoria: {post.categoria?.nome}
             </span>
           </div>

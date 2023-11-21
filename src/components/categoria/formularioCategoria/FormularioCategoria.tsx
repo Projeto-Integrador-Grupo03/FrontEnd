@@ -1,10 +1,10 @@
 import { ChangeEvent, useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { RotatingLines } from "react-loader-spinner";
 import { toastAlerta } from "../../../utils/toastAlerta";
 import { atualizar, buscar, cadastrar } from "../../../services/Service";
 import { AuthContext } from "../../../contexts/AuthContext";
-
+import { jelly } from "ldrs";
+jelly.register('l-jelly')
 import Categoria from "../../../models/Categoria";
 
 function FormularioCategoria() {
@@ -139,13 +139,13 @@ function FormularioCategoria() {
 
                     className="bg-[#D973AB] botaouser text-[0.85rem] font-[400] text-[#ffff] rounded text-slate-100 w-1/2 py-2 mx-auto flex justify-center" type="submit">
                     {isLoading ?
-                        <RotatingLines
-                            strokeColor="white"
-                            strokeWidth="5"
-                            animationDuration="0.75"
-                            width="24"
-                            visible={true}
-                        /> :
+                        <l-jelly
+                        color={'#f5f5f5'}
+                        size={22}
+                        speed={0.7}
+                        stroke-length={0.10}
+                        bg-opacity={0.22}
+                    /> :
                         <span>Confirmar</span>
                     }
                 </button>
