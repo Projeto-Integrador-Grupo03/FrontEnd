@@ -103,9 +103,9 @@ function DeletarProduto() {
                     </div>
 
                     <div className="div-baixo flex items-end justify-center h-[5rem] px-[2rem]">
-                        <div className="flex gap-3">
+                        <div className="flex w-[100%] justify-evenly gap-3">
                             <button onClick={deletarProduto}
-                                className="flex justify-center items-center text-center border-none outline-none w-[5rem] p-[0.60rem] shadow-md bg-[#F29494] rounded-md"
+                                className="flex justify-center items-center text-center border-none outline-none w-[6.5rem] p-[0.60rem] shadow-md bg-[#F29494] rounded-md"
                             >
                                 {isLoading ?
                                     <l-jelly
@@ -119,8 +119,9 @@ function DeletarProduto() {
                                 }
                             </button>
 
-                            <button className="flex justify-center items-center text-center border-none outline-none w-[5rem] p-[0.60rem] shadow-md bg-[#D97398] rounded-md" onClick={retornar}>
+                            <button className="flex justify-center items-center text-center border-none outline-none w-[6.5rem] p-[0.60rem] shadow-md bg-[#D97398] rounded-md" onClick={retornar}>
                                 <i><XCircle size={20} color="#fff5f5" weight="bold" /></i></button>
+
                         </div>
                     </div>
                 </div>

@@ -40,16 +40,16 @@ export default function Apoio() {
                                 <p className='text-justify indent-2.5 text-[#515961]'>A Casa da Mulher Brasileira é um espaço único que oferece apoio psicossocial, com delegacia, Juizado, Ministério Público, Defensoria Pública e serviços para autonomia econômica. Atualmente, há seis unidades em funcionamento no país: Campo Grande (MS), São Luís (MA), Fortaleza (CE), Curitiba (PR), Boa Vista (RR) e São Paulo (SP). Além disso, existem os CEAMs, que proporcionam acolhimento, atendimento psicológico e orientação jurídica para mulheres em situação de violência.</p>
                             </div>
 
-                            <div className="borda flex flex-col justify-evenly p-4 gap-4 w-[100%]">
+                            <div className="borda flex flex-col justify-evenly items-center p-4 gap-4 w-[100%]">
                                 <h3 className='text-center font-[600] text-[1.5rem] text-[#515961]'>Centros especializados para mulheres</h3>
-                                <p className='text-justify indent-2.5 text-[#515961]'>A Casa da Mulher Brasileira é um espaço único que oferece apoio psicossocial, com delegacia, Juizado, Ministério Público, Defensoria Pública e serviços para autonomia econômica. Atualmente, há seis unidades em funcionamento no país: Campo Grande (MS), São Luís (MA), Fortaleza (CE), Curitiba (PR), Boa Vista (RR) e São Paulo (SP). Além disso, existem os CEAMs, que proporcionam acolhimento, atendimento psicológico e orientação jurídica para mulheres em situação de violência.</p>
+                                <p className='text-justify indent-2.5 text-[#515961]'></p>
+                                <button className="rounded-lg border-none outline-none text-[#f5f5f5] bg-[#D973AB] w-[85%]">Clique Aqui</button>
                             </div>
 
                             <div className="borda flex flex-col justify-evenly p-4 gap-4 w-[100%]">
                                 <h3 className='text-center font-[600] text-[1.5rem] text-[#515961]'>Mapa do Acolhimento:</h3>
                                 <p className='text-justify indent-2.5 text-[#515961]'>Conectando mulheres vítimas de violência de gênero a psicólogas e advogadas voluntárias. Acesse em mapadoacolhimento.org | @mapadoacolhimento no Instagram | @MapaDoAcolhimento no Facebook.</p>
                             </div>
-                            <button className="rounded-lg border-4 border-[#000000] text-[#f5f5f5] bg-pink-400 w-[85%]">Clique Aqui</button>
                         </div>
 
                         <div className="flex flex-col gap-6">
