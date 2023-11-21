@@ -159,7 +159,7 @@ function FormularioProdutos() {
                         value={produto.duracao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Adicione aqui a Duração da Postagem"
+                        placeholder="Adicione aqui a Descrição do Produto"
                         name="duracao"
                         required
                         className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"

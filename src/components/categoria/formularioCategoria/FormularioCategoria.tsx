@@ -117,7 +117,7 @@ function FormularioCategoria() {
                     <label htmlFor="nome">Nome da Categoria</label>
                     <input
                         type="text"
-                        placeholder="Descreva aqui sua categoria"
+                        placeholder="Nome da categoria"
                         name='nome'
                         className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                         value={categoria.nome}
