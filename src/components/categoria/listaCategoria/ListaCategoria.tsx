@@ -1,5 +1,5 @@
 ﻿import { useContext, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toastAlerta } from '../../../utils/toastAlerta';
 import { buscar } from '../../../services/Service';
 import { AuthContext } from '../../../contexts/AuthContext';
@@ -9,6 +9,7 @@ import { trefoil } from 'ldrs'
 trefoil.register('l-trefoil')
 
 import './ListaCategoria.css'
+import { FloppyDisk } from '@phosphor-icons/react';
 
 
 function ListaCategoria() {
@@ -47,12 +48,15 @@ function ListaCategoria() {
   return (
     <>
 
-            <div className="flex justify-center items-center min-h-[10vh] w-[100%] mb-[2.5rem] mt-6">
-                <div className="w-[85%]">
-                    <h1 className="padrao text-[2.5rem] text-[#515961]">Categoria</h1>
-                    <hr className="separador w-full border-[0.15rem] rounded-sm" />
-                </div>
-            </div>
+      <div className="flex justify-center items-center min-h-[10vh] w-[100%] mb-[2.5rem] mt-6">
+        <div className="w-[85%]">
+          <div className='flex items-center justify-between'>
+            <h1 className="padrao text-[2.5rem] text-[#515961]">Categoria</h1>
+            {usuario.usuario === 'root@root.com.br' ? (<Link to="/cadastrocategoria" className='flex justify-center items-center text-center border-none outline-none w-[3rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md'><i><FloppyDisk size={32} color="#f5f5f5" weight="fill" /></i></Link>) : ('')}
+          </div>
+          <hr className="separador w-full border-[0.15rem] rounded-sm" />
+        </div>
+      </div>
 
       {categorias.length === 0 && (
         <div className='flex items-center justify-center h-[90vh]'>
@@ -71,9 +75,9 @@ function ListaCategoria() {
         <div className="flex flex-col">
           <div className="responsividade gap-14">
 
-          {categorias.map((categoria) => (
-            <CardCategoria key={categoria.id} categoria={categoria} />
-          ))}
+            {categorias.map((categoria) => (
+              <CardCategoria key={categoria.id} categoria={categoria} />
+            ))}
 
           </div>
         </div>

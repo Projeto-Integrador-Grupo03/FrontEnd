@@ -21,23 +21,10 @@ function Footer() {
                </div>
 
                <div className='flex items-center justify-center'>
-                  {
-                     usuario.usuario === 'root@root.com.br' ? (
-                        <div className="flex items-center justify-center gap-8">
-
-                           <Link to="/cadastrocategoria" className='text-[white] font-[700]'>Cadastrar Categorias</Link>
-
-                           <div className='links flex gap-10 justify-center items-center'>
-                              <a href="https://github.com/dot-NET03Generation" target='blank'><i><GithubLogo size={36} color="#fff5f5" weight="bold" /></i></a>
-                              <a href="https://linktr.ee/iniciativatena" target='blank'><i><Graph size={36} color="#fff5f5" weight="bold" /></i></a>
-                           </div>
-                           <ModalProdutos />
-                        </div>
-                     ) : (<div className='links flex gap-10 justify-center items-center'>
+                     <div className='links flex gap-10 justify-center items-center'>
                         <a href="https://github.com/dot-NET03Generation" target='blank'><i><GithubLogo size={36} color="#fff5f5" weight="bold" /></i></a>
                         <a href="https://linktr.ee/iniciativatena" target='blank'><i><Graph size={36} color="#fff5f5" weight="bold" /></i></a>
-                     </div>)
-                  }
+                     </div>
                </div>
 
                <div id='direcionamento'>

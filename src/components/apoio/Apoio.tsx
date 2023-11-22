@@ -41,14 +41,15 @@ export default function Apoio() {
                             </div>
 
                             <div className="borda flex flex-col justify-evenly items-center p-4 gap-4 w-[100%]">
-                                <h3 className='text-center font-[600] text-[1.5rem] text-[#515961]'>Centros especializados para mulheres</h3>
-                                <p className='text-justify indent-2.5 text-[#515961]'></p>
-                                <button className="rounded-lg border-none outline-none text-[#f5f5f5] bg-[#D973AB] w-[85%]">Clique Aqui</button>
+                                <h3 className='text-center font-[600] text-[1.5rem] text-[#515961]'>Apoio Psicológico</h3>
+                                <p className='text-justify indent-2.5 text-[#515961]'>Separamos uma lista com atendimentos psicológicos à preço social e gratuitos para você! Eles estão separados por regiões de toda São Paulo.</p>
+                                <p className='text-justify indent-2.5 text-[#515961]'>Temos também nossos parceiros do <a href="https://www.psymeetsocial.com/" target="_blank" className="text-[#D973AB]">PsyMeet</a> que oferecem atendimentos exclusivamente online à preço social com muitas opções de abordagens, com certeza você vai encontrar um profissional que vai dar um match perfeito.</p>
+                                <button className="rounded-lg border-none outline-none font-[Inter] text-[#f5f5f5] bg-[#D973AB] w-[85%] p-2"><a href="https://drive.google.com/file/d/1TAZS_moYwsTNmKs7Bh0G6m7k_d-DV5sV/view?usp=sharing" target="_blank">Planilha</a></button>
                             </div>
 
                             <div className="borda flex flex-col justify-evenly p-4 gap-4 w-[100%]">
                                 <h3 className='text-center font-[600] text-[1.5rem] text-[#515961]'>Mapa do Acolhimento:</h3>
-                                <p className='text-justify indent-2.5 text-[#515961]'>Conectando mulheres vítimas de violência de gênero a psicólogas e advogadas voluntárias. Acesse em mapadoacolhimento.org | @mapadoacolhimento no Instagram | @MapaDoAcolhimento no Facebook.</p>
+                                <p className='text-justify indent-2.5 text-[#515961]'>Conectando mulheres vítimas de violência de gênero a psicólogas e advogadas voluntárias. Acesse em mapadoacolhimento.org  @mapadoacolhimento no Instagram  @MapaDoAcolhimento no Facebook.</p>
                             </div>
                         </div>
 

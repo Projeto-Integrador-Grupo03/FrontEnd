@@ -3,10 +3,12 @@ import { buscar } from "../../../services/Service";
 import Produto from "../../../models/Produto";
 import CardProdutos from "../cardProdutos/CardProdutos";
 import { toastAlerta } from "../../../utils/toastAlerta";
+import ModalProdutos from "../modalProdutos/ModalProdutos";
 import { trefoil } from "ldrs";
 trefoil.register("l-trefoil");
 
 import "./ListaProdutos.css";
+
 
 function ListaProdutos() {
   const [produtos, setProdutos] = useState<Produto[]>([]);
@@ -28,7 +30,10 @@ function ListaProdutos() {
     <>
       <div className="flex justify-center items-center min-h-[10vh] w-[100%] mb-[2.5rem] mt-6">
         <div className="w-[85%]">
-          <h1 className="padrao text-[2.5rem] text-[#515961]">Produtos</h1>
+          <div className="flex items-center justify-between w-[100%]">
+            <h1 className="padrao text-[2.5rem] text-[#515961]">Produtos</h1>
+            <ModalProdutos />
+          </div>
           <hr className="separador w-full border-[0.15rem] rounded-sm" />
         </div>
       </div>

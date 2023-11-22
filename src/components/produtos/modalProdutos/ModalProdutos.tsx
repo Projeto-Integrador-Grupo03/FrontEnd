@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import 'reactjs-popup/dist/index.css';
 import './ModalProdutos.css'
 import { AuthContext } from '../../../contexts/AuthContext';
+import { FloppyDisk } from '@phosphor-icons/react';
 
 
 function ModalProdutos() {
@@ -17,8 +18,8 @@ function ModalProdutos() {
                     <Popup
                         trigger={
                             <button
-                                className='link-format w-[9rem] h-[2rem] rounded-md text-[1rem] font-[700] text-[#ffff]'>
-                                Novo Produto
+                                className='flex justify-center items-center text-center border-none outline-none w-[3rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md'>
+                                <i><FloppyDisk size={32} color="#f5f5f5" weight="fill" /></i>
                             </button>
                         }
                         modal
