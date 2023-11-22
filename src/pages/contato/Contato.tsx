@@ -60,10 +60,10 @@ function Contato() {
 
                            <div className="div-baixo flex justify-center w-[100%]">
                               <div className="flex justify-center items-center gap-3">
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-[30rem]">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-lg">
                                     <a target='_blank' href="https://github.com/ander-alves"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-[30rem]">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-lg">
                                     <a target='_blank' href="https://www.linkedin.com/in/anderson-alves/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
                               </div>
@@ -101,10 +101,10 @@ function Contato() {
 
                            <div className="div-baixo flex justify-center w-[100%]">
                               <div className="flex justify-center items-center gap-3">
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-[30rem]">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-lg">
                                     <a target='_blank' href="https://github.com/Fertilesoil"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-[30rem]">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-lg">
                                     <a target='_blank' href="https://www.linkedin.com/in/fernandodiascosta-dotnet/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
                               </div>
@@ -142,10 +142,10 @@ function Contato() {
 
                            <div className="div-baixo flex justify-center w-[100%]">
                               <div className="flex justify-center items-center gap-3">
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-2xl">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-lg">
                                     <a target='_blank' href="https://github.com/GasparLeonardi"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-2xl">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-lg">
                                     <a target='_blank' href="https://www.linkedin.com/in/gasparleonardi/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
                               </div>
@@ -183,10 +183,10 @@ function Contato() {
 
                            <div className="div-baixo flex justify-center w-[100%]">
                               <div className="flex justify-center items-center gap-3">
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-xl">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-lg">
                                     <a target='_blank' href="https://github.com/karinamzk"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-xl">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-lg">
                                     <a target='_blank' href="https://www.linkedin.com/in/karinamiyazaki//"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
                               </div>
@@ -265,10 +265,10 @@ function Contato() {
 
                            <div className="div-baixo flex justify-center w-[100%]">
                               <div className="flex justify-center items-center gap-3">
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-md">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-lg">
                                     <a target='_blank' href="https://github.com/dValsc"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
-                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-md">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-lg">
                                     <a target='_blank' href="https://www.linkedin.com/in/val%C3%A9ria-carvalho/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
                                  </button>
                               </div>
