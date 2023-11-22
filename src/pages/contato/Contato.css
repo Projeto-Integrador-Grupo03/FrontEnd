@@ -1,71 +1,103 @@
-﻿#caixahome2{
-   outline: 3px solid hsla(16, 78%, 76%, 0.30);
-   box-shadow: 0px 0px 36px 0px rgba(203, 95, 93, 0.39);
-   border-radius: 1.8rem;
-   background: rgba(242, 173, 148, 0.10);
-   display: flex;
-   flex-direction: column;
-   align-items: center; 
-   justify-content: center; 
-   width: 60%;
-   margin-top: 1.5rem; /* Margem no topo */
+﻿#caixahome2 {
+  outline: 3px solid hsla(16, 78%, 76%, 0.30);
+  box-shadow: 0px 0px 36px 0px rgba(203, 95, 93, 0.39);
+  border-radius: 1.8rem;
+  background: rgba(242, 173, 148, 0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin-top: 1.5rem;
+  /* Margem no topo */
 
- }
+}
 
- #caixahome2 h1{
-   font-family: 'Eczar', sans-serif;
-   justify-items: center;
-   text-align: center; /* Centraliza o texto horizontalmente */
-   margin-bottom: 2rem; /* Adiciona margem abaixo do texto */
-   font-size: 3rem;
-   margin-top: 2rem; /* Margem no topo */
-   font-weight: 600;
- }
+#caixahome2 h1 {
+  font-family: 'Eczar', sans-serif;
+  justify-items: center;
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  margin-bottom: 2rem;
+  /* Adiciona margem abaixo do texto */
+  font-size: 3rem;
+  margin-top: 2rem;
+  /* Margem no topo */
+  font-weight: 600;
+}
 
- #caixahome2 p{
-   font-family: 'Inter', sans-serif;
-   margin-top: 0.1rem; /* Margem no topo */
-   margin-bottom: 1rem; /* Margem na parte inferior */
-   margin-right: 4rem; /* Margem à direita */
-   margin-left: 4rem; /* Margem à esquerda */
-   font-size: 1.2rem;
-   text-align: justify;
-   text-indent: 2rem;
- }
+#caixahome2 p {
+  font-family: 'Inter', sans-serif;
+  margin-top: 0.1rem;
+  /* Margem no topo */
+  margin-bottom: 1rem;
+  /* Margem na parte inferior */
+  margin-right: 4rem;
+  /* Margem à direita */
+  margin-left: 4rem;
+  /* Margem à esquerda */
+  font-size: 1.2rem;
+  text-align: justify;
+  text-indent: 2rem;
+}
 
- @media screen and (width <= 1250px) {
-   div.time{
-      display: grid;
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-   }
+@media screen and (width <=1250px) {
+  div.time {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .atenafoto {
-   text-align: center;
- }
+  text-align: center;
+}
 
- .atenafoto img {
-   width: 30rem; /* Define a largura da imagem */
-   height: auto; /* Mantém a proporção da imagem */
-   border-radius: 1rem; /* Adiciona cantos arredondados à imagem */
-   margin-bottom: 2rem; /* Margem na parte inferior */
- }
+.atenafoto img {
+  width: 30rem;
+  /* Define a largura da imagem */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  border-radius: 1rem;
+  /* Adiciona cantos arredondados à imagem */
+  margin-bottom: 2rem;
+  /* Margem na parte inferior */
+}
 
- .responsividade {
+.responsividade {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@media screen and (width <= 1235px) {
+@media screen and (width <=1235px) {
   div.responsividade {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media screen and (width <= 810px) {
+@media screen and (width <=810px) {
   div.responsividade {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+
+  .divtime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div#caixahome2 h1 {
+    font-size: 1.5rem;
+  }
+  div#caixahome2 p {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  div#caixahome2 {
+    width: 25rem;
+  }
 }
+

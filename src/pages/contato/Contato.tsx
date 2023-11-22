@@ -1,4 +1,7 @@
 import '../contato/Contato.css'
+import '../../components/produtos/cardProdutos/CardProduto.css'
+import '../../components/produtos/listaProdutos/ListaProdutos.css'
+import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react';
 
 function Contato() {
    return (
@@ -16,279 +19,265 @@ function Contato() {
                </p>
 
                <div className="atenafoto">
-                  <img src="src/assets/img/atena.png" alt="Imagem da Atena" />
+                  <img src="https://i.imgur.com/79YBz3r.png" alt="Imagem da Atena" />
                </div>
             </div>
          </div>
 
-         <section className=" #f5f5f5 dark:#f5f5f5 mb-10">
-            {/* Div sobre equipe */}
+         <div className='w-full text-center p-8'>
+            <h2 className="text-[2.5rem] tracking-tight font-bold text-[#515961] font-[Inter]">Nosso Time</h2>
+         </div>
+         
+         <section className=''>
+            <div className="flex justify-center items-center">
+               <div className="responsividade-prod place-self-center mx-2 my-4 px-2 gap-16">
 
-            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6 md:grid-cols-1 lg:grid-cols-2 ">
+                  {/* Card Anderson */}
+                  <div className="fonte">
+                     <div className="borda flex h-[13.5rem] w-[36rem]">
+                        <div
+                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[11rem]"
+                           style={{
+                              backgroundImage: `url(${'https://i.imgur.com/Roompj0.jpeg'})`,
+                           }}
+                        ></div>
 
-               <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-
-                  <h2 className="mb-4 text-3xl tracking-tight font-bold text-[#515961] dark:text-white font-[Inter]">Nosso Time</h2>
-
-                  {/* <p className="font-[Inter] text-[#515961] lg:mb-16 sm:text-xl dark:text-gray-400">
-                     Frase bonita
-                  </p> */}
-
-                  {/* Div Nosso time */}
-                  <div className="flex flex-wrap justify-center mt-10 gap-4">
-
-                     {/* Card - Anderson */}
-                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
-
-                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
-
-                           <img
-                              className="rounded-lg w-52"
-                              src="src\assets\img\anderson.JPG " alt=" Anderson Foto" />
-
-                           <div className="flex flex-col items-center p-2">
-                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">ANDERSON ALVES</h2>
-                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
-                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
-
-
-                              <div className="flex flex-col justify-between flex-grow">
-                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
-                                 </p>
+                        <div className="div-acima-cima flex flex-col w-full justify-around ">
+                           <div className="div-cima flex flex-col">
+                              <div className="flex justify-center items-center">
+                                 <span className=" text-center inline-block font-[400] text-[0.7rem] text-[#515961] ">
+                                    <h2 className="nome-format text-center text-[#515961] font-[700] text-[1.5rem] ">
+                                       ANDERSON ALVES
+                                    </h2>
+                                    Desenvolvedor Fullstack C#
+                                 </span>
                               </div>
-
-                              <ul className="display: inline-flex space-x-4">
-                                 <li>
-                                    <a target='_blank' href="https://www.linkedin.com/in/anderson-alves/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
-                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
-                                          <path d="M3 5.012H0V15h3V5.012Z" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a target='_blank' href="https://github.com/ander-alves" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                              </ul>
                            </div>
-                        </div>
-                     </div>
 
-                     {/* Card - Fernando*/}
-                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
+                           <span className="duracao-format flex justify-center items-center indent-2 text-justify font-[600] text-[#515961] text-[0.7rem] px-3">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in nobis suscipit quisquam molestias enim, commodi voluptas, sapiente consectetur iure labore nemo provident voluptatem omnis beatae sint saepe, quo quos.
+                           </span>
 
-                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
-
-                           <img
-                              className="rounded-lg w-52"
-                              src="src\assets\img\fernando.JPG" alt=" Fernando Foto" />
-
-                           <div className="flex flex-col items-center p-2">
-                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter] ">FERNANDO DIAS</h2>
-                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
-                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
-
-
-                              <div className="flex flex-col justify-between flex-grow">
-                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
-                                 </p>
+                           <div className="div-baixo flex justify-center w-[100%]">
+                              <div className="flex justify-center items-center gap-3">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-[30rem]">
+                                    <a target='_blank' href="https://github.com/ander-alves"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-[30rem]">
+                                    <a target='_blank' href="https://www.linkedin.com/in/anderson-alves/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
                               </div>
-
-                              <ul className="display: inline-flex space-x-4">
-                                 <li>
-                                    <a target='_blank' href="https://www.linkedin.com/in/fernandodiascosta-dotnet/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
-                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
-                                          <path d="M3 5.012H0V15h3V5.012Z" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a target='_blank' href="https://github.com/Fertilesoil" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                              </ul>
                            </div>
-                        </div>
-                     </div>
 
-                     {/* Card - Gaspar */}
-                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
-
-                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
-
-                           <img
-                              className="rounded-lg w-52"
-                              src="src\assets\img\gaspar.JPG" alt=" Gaspar Foto" />
-
-                           <div className="flex flex-col items-center p-2">
-                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">GASPAR LEONARDI</h2>
-                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
-                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
-
-
-                              <div className="flex flex-col justify-between flex-grow">
-                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
-                                 </p>
-                              </div>
-
-                              <ul className="display: inline-flex space-x-4">
-                                 <li>
-                                    <a target='_blank' href="https://www.linkedin.com/in/gasparleonardi/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
-                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
-                                          <path d="M3 5.012H0V15h3V5.012Z" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a target='_blank' href="https://github.com/GasparLeonardi" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-
-                     {/* Card - Karina */}
-                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
-
-                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
-
-                           <img
-                              className="rounded-lg w-52"
-                              src="src\assets\img\karina.JPG" alt=" Karina Foto" />
-
-                           <div className="flex flex-col items-center p-2">
-                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">KARINA AKINA</h2>
-                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
-                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
-
-
-                              <div className="flex flex-col justify-between flex-grow">
-                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
-                                 </p>
-                              </div>
-
-                              <ul className="display: inline-flex space-x-4">
-                                 <li>
-                                    <a target='_blank' href="https://www.linkedin.com/in/karinamiyazaki//" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
-                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
-                                          <path d="M3 5.012H0V15h3V5.012Z" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a target='_blank' href="https://github.com/karinamzk" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-
-                     {/* Card - Samantha */}
-                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
-
-                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
-
-                           <img
-                              className="rounded-lg w-52"
-                              src="src\assets\img\samantha.JPG" alt=" Samantha Foto" />
-
-                           <div className="flex flex-col items-center p-2">
-                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">SAMANTHA BLAZIZZA</h2>
-                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
-                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
-
-
-                              <div className="flex flex-col justify-between flex-grow">
-                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
-                                 </p>
-                              </div>
-
-                              <ul className="display: inline-flex space-x-4">
-                                 <li>
-                                    <a target='_blank' href="https://www.linkedin.com/in/samanthablazizza/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
-                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
-                                          <path d="M3 5.012H0V15h3V5.012Z" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a target='_blank' href="https://github.com/samanthablazizza" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-
-                     {/* Card - Valéria */}
-                     <div className="flex items-center rounded-lg shadow dark:border-gray-800 max-w-xl m-2">
-
-                        <div className="flex rounded-lg h-full dark:bg-gray-800 p-2">
-
-                           <img
-                              className="rounded-lg w-52"
-                              src="src\assets\img\valeria.JPG" alt=" Valéria Foto" />
-
-                           <div className="flex flex-col items-center p-2">
-                              <h2 className="text-[#515961] dark:text-white text-lg font-bold font-[Inter]">VALÉRIA CARVALHO</h2>
-                              <span className="text-[#515961] dark:text-gray-400">Desenvolvedor Fullstack C#</span>
-                              <p className="mt-3 mb-4 font-lighttext-[#515961] dark:text-gray-400"></p>
-
-
-                              <div className="flex flex-col justify-between flex-grow">
-                                 <p className="leading-relaxed text-base text-[#515961] dark:text-gray-300 text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa magni cupiditate! Voluptatum, atque. Exercitationem debitis omnis voluptatem illum repudiandae, fugiat, dolor deserunt nam blanditiis veniam eaque dolorem necessitatibus aut?
-                                 </p>
-                              </div>
-
-                              <ul className="display: inline-flex space-x-4">
-                                 <li>
-                                    <a target='_blank' href="https://www.linkedin.com/in/val%C3%A9ria-carvalho/" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
-                                          <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd" />
-                                          <path d="M3 5.012H0V15h3V5.012Z" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a target='_blank' href="https://github.com/dValsc" className="text-gray-800 hover:text-gray-900 dark:hover:text-white">
-                                       <svg className="w-6 h-6 text-[#515961] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
-                                       </svg>
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
                         </div>
                      </div>
                   </div>
+
+                  {/* Card Fernando */}
+                  <div className="fonte">
+                     <div className="borda flex h-[13.5rem] w-[36rem]">
+                        <div
+                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[11rem]"
+                           style={{
+                              backgroundImage: `url(${'https://i.imgur.com/DTsJsb0.jpeg'})`,
+                           }}
+                        ></div>
+
+                        <div className="div-acima-cima flex flex-col w-full justify-around ">
+                           <div className="div-cima flex flex-col">
+                              <div className="flex justify-center items-center">
+                                 <span className=" text-center inline-block font-[400] text-[0.7rem] text-[#515961] ">
+                                    <h2 className="nome-format text-center text-[#515961] font-[700] text-[1.5rem] ">
+                                       FERNANDO DIAS
+                                    </h2>
+                                    Desenvolvedor Fullstack C#
+                                 </span>
+                              </div>
+                           </div>
+
+                           <span className="duracao-format flex justify-center items-center indent-2 text-justify font-[600] text-[#515961] text-[0.7rem] px-3">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in nobis suscipit quisquam molestias enim, commodi voluptas, sapiente consectetur iure labore nemo provident voluptatem omnis beatae sint saepe, quo quos.
+                           </span>
+
+                           <div className="div-baixo flex justify-center w-[100%]">
+                              <div className="flex justify-center items-center gap-3">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-[30rem]">
+                                    <a target='_blank' href="https://github.com/Fertilesoil"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-[30rem]">
+                                    <a target='_blank' href="https://www.linkedin.com/in/fernandodiascosta-dotnet/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  {/* Card Gaspar */}
+                  <div className="fonte">
+                     <div className="borda flex h-[13.5rem] w-[36rem]">
+                        <div
+                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[9rem]"
+                           style={{
+                              backgroundImage: `url(${'https://i.imgur.com/3tZY6Hm.jpeg'})`,
+                           }}
+                        ></div>
+
+                        <div className="div-acima-cima flex flex-col w-full justify-around ">
+                           <div className="div-cima flex flex-col">
+                              <div className="flex justify-center items-center">
+                                 <span className=" text-center inline-block font-[400] text-[0.7rem] text-[#515961] ">
+                                    <h2 className="nome-format text-center text-[#515961] font-[700] text-[1.5rem] ">
+                                       GASPAR LEONARDI
+                                    </h2>
+                                    Desenvolvedor Fullstack C#
+                                 </span>
+                              </div>
+                           </div>
+
+                           <span className="duracao-format flex justify-center items-center indent-2 text-justify font-[600] text-[#515961] text-[0.7rem] px-3">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in nobis suscipit quisquam molestias enim, commodi voluptas, sapiente consectetur iure labore nemo provident voluptatem omnis beatae sint saepe, quo quos.
+                           </span>
+
+                           <div className="div-baixo flex justify-center w-[100%]">
+                              <div className="flex justify-center items-center gap-3">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-2xl">
+                                    <a target='_blank' href="https://github.com/GasparLeonardi"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-2xl">
+                                    <a target='_blank' href="https://www.linkedin.com/in/gasparleonardi/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  {/* Card Karina */}
+                  <div className="fonte">
+                     <div className="borda flex h-[13.5rem] w-[36rem]">
+                        <div
+                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[11rem]"
+                           style={{
+                              backgroundImage: `url(${'https://i.imgur.com/fszb1mX.jpeg'})`,
+                           }}
+                        ></div>
+
+                        <div className="div-acima-cima flex flex-col w-full justify-around ">
+                           <div className="div-cima flex flex-col">
+                              <div className="flex justify-center items-center">
+                                 <span className=" text-center inline-block font-[400] text-[0.7rem] text-[#515961] ">
+                                    <h2 className="nome-format text-center text-[#515961] font-[700] text-[1.5rem] ">
+                                       KARINA AKINA
+                                    </h2>
+                                    Desenvolvedor Fullstack C#
+                                 </span>
+                              </div>
+                           </div>
+
+                           <span className="duracao-format flex justify-center items-center indent-2 text-justify font-[600] text-[#515961] text-[0.7rem] px-3">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in nobis suscipit quisquam molestias enim, commodi voluptas, sapiente consectetur iure labore nemo provident voluptatem omnis beatae sint saepe, quo quos.
+                           </span>
+
+                           <div className="div-baixo flex justify-center w-[100%]">
+                              <div className="flex justify-center items-center gap-3">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-xl">
+                                    <a target='_blank' href="https://github.com/karinamzk"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-xl">
+                                    <a target='_blank' href="https://www.linkedin.com/in/karinamiyazaki//"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  {/* Card Samantha */}
+                  <div className="fonte">
+                     <div className="borda flex h-[13.5rem] w-[36rem]">
+                        <div
+                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[11rem]"
+                           style={{
+                              backgroundImage: `url(${'https://i.imgur.com/yn8ovh3.jpeg'})`,
+                           }}
+                        ></div>
+
+                        <div className="div-acima-cima flex flex-col w-full justify-around ">
+                           <div className="div-cima flex flex-col">
+                              <div className="flex justify-center items-center">
+                                 <span className=" text-center inline-block font-[400] text-[0.7rem] text-[#515961] ">
+                                    <h2 className="nome-format text-center text-[#515961] font-[700] text-[1.5rem] ">
+                                       SAMANTHA BLAZIZZA
+                                    </h2>
+                                    Desenvolvedor Fullstack C#
+                                 </span>
+                              </div>
+                           </div>
+
+                           <span className="duracao-format flex justify-center items-center indent-2 text-justify font-[600] text-[#515961] text-[0.7rem] px-3">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in nobis suscipit quisquam molestias enim, commodi voluptas, sapiente consectetur iure labore nemo provident voluptatem omnis beatae sint saepe, quo quos.
+                           </span>
+
+                           <div className="div-baixo flex justify-center w-[100%]">
+                              <div className="flex justify-center items-center gap-3">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-lg">
+                                    <a target='_blank' href="https://github.com/samanthablazizza"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-lg">
+                                    <a target='_blank' href="https://www.linkedin.com/in/samanthablazizza/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  {/* Card Valéria */}
+                  <div className="fonte">
+                     <div className="borda flex h-[13.5rem] w-[36rem]">
+                        <div
+                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[11rem]"
+                           style={{
+                              backgroundImage: `url(${'https://i.imgur.com/hDR4A1S.jpeg'})`,
+                           }}
+                        ></div>
+
+                        <div className="div-acima-cima flex flex-col w-full justify-around ">
+                           <div className="div-cima flex flex-col">
+                              <div className="flex justify-center items-center">
+                                 <span className=" text-center inline-block font-[400] text-[0.7rem] text-[#515961] ">
+                                    <h2 className="nome-format text-center text-[#515961] font-[700] text-[1.5rem] ">
+                                       VALÉRIA CARVALHO
+                                    </h2>
+                                    Desenvolvedor Fullstack C#
+                                 </span>
+                              </div>
+                           </div>
+
+                           <span className="duracao-format flex justify-center items-center indent-2 text-justify font-[600] text-[#515961] text-[0.7rem] px-3">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in nobis suscipit quisquam molestias enim, commodi voluptas, sapiente consectetur iure labore nemo provident voluptatem omnis beatae sint saepe, quo quos.
+                           </span>
+
+                           <div className="div-baixo flex justify-center w-[100%]">
+                              <div className="flex justify-center items-center gap-3">
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#F29494] rounded-md">
+                                    <a target='_blank' href="https://github.com/dValsc"><i><GithubLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                                 <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#D97398] rounded-md">
+                                    <a target='_blank' href="https://www.linkedin.com/in/val%C3%A9ria-carvalho/"> <i><LinkedinLogo size={32} color="#fff5f5" weight="light" /></i></a>
+                                 </button>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
                </div>
             </div>
          </section>
