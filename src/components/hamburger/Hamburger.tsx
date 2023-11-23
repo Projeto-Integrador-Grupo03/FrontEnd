@@ -15,6 +15,7 @@ export default function Hamburger() {
   function logout() {
     if (usuario.token === '') {
       toastAlerta('Você precisa estar logado para sair!', 'info')
+      window.navigator.vibrate(300)
     } else {
       handleLogout()
       toastAlerta('Obrigado por usar nosso site!', 'default')
