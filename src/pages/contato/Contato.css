@@ -101,3 +101,19 @@
   }
 }
 
+.duracao-format {
+  overflow-y: auto;
+}
+
+.duracao-format::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: hsla(16, 78%, 76%, 0.90);
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}::-webkit-scrollbar-thumb {
+  width: 0.3rem;
+  background-color: rgba(203, 95, 93, 0.40);
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+

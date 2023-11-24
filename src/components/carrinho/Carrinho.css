@@ -155,3 +155,18 @@
         opacity: 0;
     }
 }
+
+@media screen and (width <=1290px) {
+    h1.padrao {
+        font-size: 1.1rem;
+    }
+
+    p.payment {
+        font-size: 1rem;
+    }
+
+    button.padrao {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+}

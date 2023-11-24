@@ -20,6 +20,7 @@ function GridCarrinho() {
             await buscar('/produtos', setProdutos, {})
         } catch (error: any) {
             if (error.toString().includes('403')) {
+                window.navigator.vibrate(300)
                 alert('Houve um erro inesperado')
             }
         }
@@ -35,16 +36,16 @@ function GridCarrinho() {
 
     return (
         <>
-            <div className="flex justify-center items-center min-h-[35vh] w-[100%]">
+            <div className="flex justify-center items-center min-h-[10vh] w-[100%] mt-6 mb-[2.5rem]">
                 <div className="w-[85%]">
                     <h1 className="padrao text-[2.5rem] text-[#515961]">Resumo da compra</h1>
                     <hr className="separador w-full border-[0.15rem] rounded-sm" />
                 </div>
             </div>
 
-            <div className="flex justify-evenly min-h-[100vh]">
+            <div className="caixa-conteudo flex justify-evenly min-h-[100vh]">
 
-                <div className="flex items-start justify-center min-h-[100vh] w-[45%]">
+                <div className="caixa-padrao flex items-start justify-center min-h-[100vh] w-[45%]">
 
 
 
@@ -55,7 +56,7 @@ function GridCarrinho() {
                                 (
                                     <div className=" flex justify-between px-5 items-center rounded-2xl font-bold h-[3rem]" key={post.id}>
 
-                                        <div>
+                                        <div className="post-nome">
                                             <p>{post.nome}</p>
                                         </div>
 
@@ -71,7 +72,7 @@ function GridCarrinho() {
                             ))}
                         </div>
                         <div className=" flex justify-between px-5 items-center rounded-2xl font-bold h-[3rem]">
-                            <div><h3 className='place-self-center font-bold text-xl p-2'>Subtotal:</h3></div>
+                            <div><h3 className='post-subtotal place-self-center font-bold text-xl p-2'>Subtotal:</h3></div>
 
                             <div>
                                 <p>R$ {new Intl.NumberFormat('pt-BR', {
@@ -86,7 +87,7 @@ function GridCarrinho() {
 
                 </div>
 
-                <div className="w-[30rem] min-h-[100vh] flex justify-center items-start">
+                <div className="carrinho w-[30rem] min-h-[100vh] flex justify-center items-start">
 
                     <div className="">
                         <Carrinho />

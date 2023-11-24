@@ -1,10 +1,9 @@
 ﻿import { AuthContext } from '../../contexts/AuthContext';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, SignOut } from '@phosphor-icons/react/dist/ssr';
 import './Hamburguer.css'
 import { toastAlerta } from '../../utils/toastAlerta';
-import { useState } from 'react';
 
 
 export default function Hamburger() {
@@ -16,6 +15,7 @@ export default function Hamburger() {
     if (usuario.token === '') {
       toastAlerta('Você precisa estar logado para sair!', 'info')
       window.navigator.vibrate(300)
+      closeMenu()
     } else {
       handleLogout()
       toastAlerta('Obrigado por usar nosso site!', 'default')
@@ -25,10 +25,12 @@ export default function Hamburger() {
 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
+    window.navigator.vibrate(150)
   }
 
   function closeMenu() {
     setMenuOpen(false);
+    window.navigator.vibrate(150)
   }
 
   /*  function menuOnClick() {
@@ -59,7 +61,7 @@ export default function Hamburger() {
         {usuario.token === '' ? (<Link to="/login" onClick={closeMenu}><li className='link-format text-[white] font-[700]'>Login</li></Link>)
           : ('')}
         <div className='flex justify-evenly w-[100%]'>
-          <Link to="/" onClick={closeMenu}><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
+          <Link to="/carrinho" onClick={closeMenu}><li className='link-format text-[white] font-[700]'><i><ShoppingCart size={28} weight="bold" color="#f5f5f5" /></i></li></Link>
           <Link onClick={logout} to="/login"><li><i className='link-format cursor-pointer'><SignOut size={28} color="#fff5f5" weight="bold" /></i></li></Link>
         </div>
       </div>

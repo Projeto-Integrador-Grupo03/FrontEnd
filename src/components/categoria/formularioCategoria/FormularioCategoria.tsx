@@ -29,6 +29,7 @@ function FormularioCategoria() {
         } catch (error: any) {
             if (error.toString().includes('403')) {
                 toastAlerta('O token expirou, favor logar novamente', 'info')
+                window.navigator.vibrate(300)
                 handleLogout()
             }
         }
@@ -37,6 +38,7 @@ function FormularioCategoria() {
     useEffect(() => {
         if (token === '') {
             toastAlerta('Você precisa estar logado', 'info');
+            window.navigator.vibrate(300)
             navigate('/login');
         }
     }, [token]);

@@ -1,0 +1,8 @@
+﻿@media screen and (width <= 1060px) {
+  div.caixa {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}

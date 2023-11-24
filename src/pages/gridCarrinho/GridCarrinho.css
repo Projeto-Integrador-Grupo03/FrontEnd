@@ -1,51 +1,80 @@
 .borda-compra {
-    outline: 3px solid hsla(16, 78%, 76%, 0.30);
-    box-shadow: 0px 0px 36px 0px rgba(203, 95, 93, 0.39);
-    border-radius: 1.8rem;
-    background: rgba(242, 173, 148, 0.10);
- }
- 
- .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-       'resumotitulo resumo'
-       'resumovalor resumo'
-       'resumovalor resumo'
-       'resumovalor resumo'
-    ;
- }
- 
- .padrao {
-    font-family: 'Inter', sans-serif;
- }
- 
- .resumotitulo {
-    grid-area: resumotitulo;
- }
- 
- .resumovalor {
-    grid-area: resumovalor;
- }
- 
- .resumo {
-    grid-area: resumo;
- }
- 
- hr.separador {
-    background-color: rgba(230, 230, 230, 0.70);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
- }
- 
- @media (width <=1250px) {
-    .grid {
-       grid-template-areas:
-          'titulo titulo titulo'
-          'card1 card1 card1'
-          'card2 card2 card2'
-          'card3 card3 card3'
-          'resumo resumo resumo'
-       ;
-    }
- }
+   outline: 3px solid hsla(16, 78%, 76%, 0.30);
+   box-shadow: 0px 0px 36px 0px rgba(203, 95, 93, 0.39);
+   border-radius: 1.8rem;
+   background: rgba(242, 173, 148, 0.10);
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-areas:
+      'resumotitulo resumo'
+      'resumovalor resumo'
+      'resumovalor resumo'
+      'resumovalor resumo'
+   ;
+}
+
+.padrao {
+   font-family: 'Inter', sans-serif;
+}
+
+.resumotitulo {
+   grid-area: resumotitulo;
+}
+
+.resumovalor {
+   grid-area: resumovalor;
+}
+
+.resumo {
+   grid-area: resumo;
+}
+
+hr.separador {
+   background-color: rgba(230, 230, 230, 0.70);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+@media screen and (width <=1290px) {
+   div.caixa-conteudo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+@media screen and (width <=1290px) {
+   div.caixa-conteudo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   div.padrao {
+      min-width: 21rem;
+      font-size: 0.7rem;
+   }
+
+   div.post-nome {
+      font-size: o.7rem;
+   }
+
+   h3.post-subtotal {
+      font-size: 0.9rem;
+   }
+
+   div.caixa-padrao {
+      min-height: 30vh;
+      margin-bottom: 2rem;
+   }
+
+   div.carrinho {
+      min-height: 30vh;
+      max-width: 17rem;
+   }
+}

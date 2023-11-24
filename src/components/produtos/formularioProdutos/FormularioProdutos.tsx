@@ -51,7 +51,8 @@ function FormularioProdutos() {
     useEffect(() => {
         if (token === '') {
             toastAlerta('Você precisa estar logado', 'info');
-            navigate('/');
+            window.navigator.vibrate(300)
+            navigate('/login');
         }
     }, [token])
 
@@ -100,9 +101,11 @@ function FormularioProdutos() {
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     toastAlerta('O token expirou, favor logar novamente', 'info')
+                    window.navigator.vibrate(300)
                     handleLogout()
                 } else {
                     toastAlerta('Erro ao atualizar o Produto', 'erro')
+                    window.navigator.vibrate(300)
                 }
             }
 
@@ -119,9 +122,11 @@ function FormularioProdutos() {
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     toastAlerta('O token expirou, favor logar novamente', 'info')
+                    window.navigator.vibrate(300)
                     handleLogout()
                 } else {
                     toastAlerta('Erro ao cadastrar o Produto', 'erro');
+                    window.navigator.vibrate(300)
                 }
             }
         }
@@ -133,12 +138,12 @@ function FormularioProdutos() {
     const carregandoCategoria = categoria.nome === '';
 
     return (
-        <div className="container flex flex-col mx-auto items-center font-[Inter] text-[#515961]">
+        <div className="caixa container flex flex-col mx-auto items-center font-[Inter] text-[#515961]">
             <h1 className="text-4xl text-center my-8">
                 {id !== undefined ? 'Editar Produto' : 'Cadastrar Produto'}
             </h1>
 
-            <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovoProduto}>
+            <form className="form flex flex-col w-[50%] gap-4" onSubmit={gerarNovoProduto}>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="nome">Nome do Produto</label>
                     <input
@@ -178,6 +183,7 @@ function FormularioProdutos() {
                         className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                     />
                 </div>
+                {/* 
                 <div className="flex flex-col gap-2">
                     <label htmlFor="quantidade">Quantidade</label>
 
@@ -190,7 +196,8 @@ function FormularioProdutos() {
                         required
                         className="border-2 usuario rounded-md placeholder:text-[0.8rem] p-[0.5rem]"
                     />
-                </div>
+                </div> */}
+
                 <div className="flex flex-col gap-2">
                     <label htmlFor="foto">Foto</label>
 

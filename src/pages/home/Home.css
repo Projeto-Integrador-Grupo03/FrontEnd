@@ -26,7 +26,7 @@ div#caixahome{
 
 @media screen and (width <= 760px) {
     div#caixahome {
-        height: 15rem;
+        height: 11.2rem;
     }
 }
 
