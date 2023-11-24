@@ -85,7 +85,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
         </button>*/}
             </div>
 
-            <span className="text-[#515961] font-[500]">
+            <span className="valor text-[#515961] font-[500]">
               {post.valor === 0 ? ("Grátis") : (formattedNumber)}
             </span>
           </div>
