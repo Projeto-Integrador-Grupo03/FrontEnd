@@ -143,7 +143,7 @@ function FormularioProdutos() {
                 {id !== undefined ? 'Editar Produto' : 'Cadastrar Produto'}
             </h1>
 
-            <form className="form flex flex-col w-[50%] gap-4" onSubmit={gerarNovoProduto}>
+            <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovoProduto}>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="nome">Nome do Produto</label>
                     <input

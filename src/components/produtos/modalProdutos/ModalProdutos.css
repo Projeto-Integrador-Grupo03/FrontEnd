@@ -6,8 +6,9 @@
 
 @media screen and (width <=1060px) {
     .popup-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 90%;
-        margin: 0;
     }
-  
 }

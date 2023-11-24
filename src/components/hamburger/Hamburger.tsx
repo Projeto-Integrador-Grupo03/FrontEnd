@@ -25,12 +25,12 @@ export default function Hamburger() {
 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
-    window.navigator.vibrate(150)
+    window.navigator.vibrate(50)
   }
 
   function closeMenu() {
     setMenuOpen(false);
-    window.navigator.vibrate(150)
+    window.navigator.vibrate(50)
   }
 
   /*  function menuOnClick() {
