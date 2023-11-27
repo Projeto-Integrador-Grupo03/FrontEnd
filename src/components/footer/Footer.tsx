@@ -1,6 +1,5 @@
 ﻿import '../footer/Footer.css'
 import { Link } from 'react-router-dom';
-import ModalProdutos from '../produtos/modalProdutos/ModalProdutos';
 import { AuthContext } from '../../contexts/AuthContext';
 import { useContext } from 'react'
 import { GithubLogo, Graph } from '@phosphor-icons/react';
@@ -9,7 +8,7 @@ import { GithubLogo, Graph } from '@phosphor-icons/react';
 
 function Footer() {
 
-   const { usuario } = useContext(AuthContext)
+   useContext(AuthContext)
 
    return (
       <footer>
@@ -31,16 +30,15 @@ function Footer() {
 
                   <div>
                      <ul>
-                        <a className='link-format font-[700]' href=""><li>Produtos</li></a>
-                        <a className='link-format font-[700]' href=""><li>Canais de Apoio</li></a>
+                     <Link to="/produtos"><li className='link-format text-[white] font-[700]'>Produtos</li></Link>
+                     <Link to="/apoio"><li className='link-format text-[white] font-[700]'>Canais de Apoio</li></Link>
                      </ul>
                   </div>
 
                   <div>
                      <ul>
-                        <Link to="/contato">
-                           <a className='link-format font-[700]' href=""><li>Quem Somos</li></a></Link>
-                        <a className='link-format font-[700]' href=""><li>Meu Perfil</li></a>
+                     <Link to="/contato"><li className='link-format text-[white] font-[700]'>Quem Somos</li></Link>
+                     <Link to="/categorias"><li className='link-format text-[white] font-[700]'>Categorias</li></Link>
                      </ul>
                   </div>
 

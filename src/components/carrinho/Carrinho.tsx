@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { CreditCard, Bank} from '@phosphor-icons/react'
 import './Carrinho.css'
 import Produto from '../../models/Produto';
+import { toastAlerta } from '../../utils/toastAlerta';
 
 function Carrinho() {
 
@@ -13,7 +14,12 @@ function Carrinho() {
         navigate("/produtos")
     }
 
-    const { posts, limparCart, comprar } = useContext(AuthContext)
+    function retornaLogin() {
+        toastAlerta('Você precisa estar logado para finalizar a compra', 'info')
+        navigate('/login')
+    }
+
+    const { posts, limparCart, comprar, usuario } = useContext(AuthContext)
 
     function Comprar() {
         comprar()
@@ -92,7 +98,7 @@ function Carrinho() {
                             <button
                                 className={`padrao px-6 py-2 bg-[#D97398] text-[0.9rem] font-[700] text-center text-[#f5f5f5] rounded-lg 
                                 ${selectedPayment ? 'dark:hover:bg-[#d97398da]' : 'opacity-50 cursor-not-allowed'}`}
-                                onClick={Comprar}
+                                onClick={usuario.token === "" ? retornaLogin: Comprar}
                                 disabled={!selectedPayment}> Finalizar Compra </button>
                         </div>
 
