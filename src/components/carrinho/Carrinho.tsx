@@ -15,6 +15,7 @@ function Carrinho() {
     }
 
     function retornaLogin() {
+        window?.navigator?.vibrate?.(300)
         toastAlerta('Você precisa estar logado para finalizar a compra', 'info')
         navigate('/login')
     }
@@ -23,6 +24,7 @@ function Carrinho() {
 
     function Comprar() {
         comprar()
+        window?.navigator?.vibrate?.(30)
         navigate("/produtos")
     }
 

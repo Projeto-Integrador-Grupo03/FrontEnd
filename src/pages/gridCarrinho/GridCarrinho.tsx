@@ -20,6 +20,7 @@ function GridCarrinho() {
             await buscar('/produtos', setProdutos, {})
         } catch (error: any) {
             if (error.toString().includes('403')) {
+                window?.navigator?.vibrate?.(300)
                 alert('Houve um erro inesperado')
             }
         }

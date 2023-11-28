@@ -18,7 +18,7 @@ function ModalProdutos() {
                     <Popup
                         trigger={
                             <button
-                                className='flex justify-center items-center text-center border-none outline-none w-[3rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md'>
+                                className='btn-produtos flex justify-center items-center text-center border-none outline-none w-[3rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md'>
                                 <i><FloppyDisk size={32} color="#f5f5f5" weight="fill" /></i>
                             </button>
                         }

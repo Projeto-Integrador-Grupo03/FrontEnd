@@ -65,7 +65,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
             </Link>
           </div>
         ) : (
-          <button className="flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md" onClick={() => adicionarProduto(post)}>
+          <button className="btn flex justify-center items-center text-center border-none outline-none w-[4rem] p-[0.30rem] shadow-md bg-[#d973ab] rounded-md" onClick={() => adicionarProduto(post)}>
                 <i>
                   <ShoppingCart size={24} weight="fill" color="#f5f5f5" />
                 </i>

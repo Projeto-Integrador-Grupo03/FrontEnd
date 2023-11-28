@@ -18,6 +18,23 @@
   padding: 0.05rem;
 }
 
+span.duracao-format {
+  overflow-y: auto;
+  margin-bottom: 0.3rem;
+}
+
+span.duracao-format::-webkit-scrollbar {
+  width: 0.25rem;
+  background-color: transparent;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}span::-webkit-scrollbar-thumb {
+  width: 0.25rem;
+  background-color: hsla(16, 78%, 76%, 0.60);
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
 @media screen and (width < 1280px) {
   h2.nome-format {
     font-size: 1rem;
@@ -30,27 +47,25 @@
 
 @media screen and (width <=1460px) {
   
-  .duracao-format {
+  span.duracao-format {
     overflow-y: auto;
+    margin-bottom: 0.7rem;
   }
 
-  .duracao-format::-webkit-scrollbar {
-    width: 0.3rem;
+  span.duracao-format::-webkit-scrollbar {
+    width: 0.25rem;
+    background-color: transparent;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }span::-webkit-scrollbar-thumb {
+    width: 0.25rem;
     background-color: hsla(16, 78%, 76%, 0.90);
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-  }::-webkit-scrollbar-thumb {
-    width: 0.3rem;
-    background-color: rgba(203, 95, 93, 0.40);
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
   }
 
   div.borda {
     width: 100%;
-  }
-  span.duracao-format {
-    margin-bottom: 0.7rem;
   }
   div.div-cima {
     gap: 0;
@@ -60,6 +75,11 @@
   }
   span.categoria-format {
     font-size: 0.7rem;
+  }
+
+  button.btn {
+    padding: 0.25rem;
+    width: 3.35rem;
   }
 }
 

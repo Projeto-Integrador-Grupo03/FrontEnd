@@ -11,4 +11,8 @@
         align-items: center;
         width: 90%;
     }
+
+    button.btn-produtos {
+        transform: scale(0.8);
+    }
 }
