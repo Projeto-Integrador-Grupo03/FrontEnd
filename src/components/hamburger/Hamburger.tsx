@@ -14,6 +14,7 @@ export default function Hamburger() {
   function logout() {
     if (usuario.token === '') {
       toastAlerta('Você precisa estar logado para sair!', 'info')
+      window?.navigator?.vibrate?.(300)
       closeMenu()
     } else {
       handleLogout()
@@ -24,17 +25,19 @@ export default function Hamburger() {
 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
+    window?.navigator?.vibrate?.(50)
   }
 
   function closeMenu() {
     setMenuOpen(false);
+    window?.navigator?.vibrate?.(50)
   }
 
-  /*  function menuOnClick() {
-      document.getElementById("menu-bar").classList.toggle("change");
-      document.getElementById("nav").classList.toggle("change");
-      document.getElementById("menu-bg").classList.toggle("change-bg");
-    }*/
+    // function menuOnClick() {
+    //   document.getElementById("menu-bar").classList.toggle("change");
+    //   document.getElementById("nav").classList.toggle("change");
+    //   document.getElementById("menu-bg").classList.toggle("change-bg");
+    // }
 
 
   return (
