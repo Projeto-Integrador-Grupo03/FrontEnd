@@ -23,14 +23,14 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
     <div className="fonte">
       <div className="borda flex h-[11.5rem] w-[35rem]">
         <div
-          className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[9rem]"
+          className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[10rem]"
           style={{
             backgroundImage: `url(${post.foto})`,
           }}
         ></div>
 
         <div className="div-acima-cima flex flex-col w-full justify-evenly">
-          <div className="div-cima flex flex-col gap-1 h-[5rem] px-[1.5rem]">
+          <div className="div-cima flex flex-col gap-1 h-[5rem] px-[1rem]">
             <div className="flex flex-col items-start justify-between gap-2">
               <h2 className="nome-format text-justify text-[#515961] font-[700] text-[1.1rem]">
                 {post.nome}
@@ -44,7 +44,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
             </span>
           </div>
 
-          <div className="div-baixo flex items-end justify-between h-[5rem] px-[1.5rem]">
+          <div className="div-baixo flex items-end justify-between h-[5rem] px-[1rem]">
             <div className="flex flex-col gap-3">
 
               {usuario.usuario === "root@root.com.br" ? (
