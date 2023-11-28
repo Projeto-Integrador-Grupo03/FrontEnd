@@ -50,12 +50,10 @@ function Cadastro() {
                 toastAlerta('Usuário cadastrado com sucesso', 'sucesso')
 
             } catch (error) {
-                window.navigator.vibrate(300)
                 toastAlerta('Erro ao cadastrar o Usuário', 'erro')
             }
 
         } else {
-            window.navigator.vibrate(300)
             toastAlerta('Dados inconsistentes. Verifique as informações de cadastro.', 'info')
             setUsuario({ ...usuario, senha: "" })
             setConfirmaSenha("")

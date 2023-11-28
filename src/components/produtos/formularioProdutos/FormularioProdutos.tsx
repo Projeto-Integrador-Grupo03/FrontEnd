@@ -51,7 +51,6 @@ function FormularioProdutos() {
     useEffect(() => {
         if (token === '') {
             toastAlerta('Você precisa estar logado', 'info');
-            window.navigator.vibrate(300)
             navigate('/login');
         }
     }, [token])
@@ -101,11 +100,9 @@ function FormularioProdutos() {
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     toastAlerta('O token expirou, favor logar novamente', 'info')
-                    window.navigator.vibrate(300)
                     handleLogout()
                 } else {
                     toastAlerta('Erro ao atualizar o Produto', 'erro')
-                    window.navigator.vibrate(300)
                 }
             }
 
@@ -122,11 +119,9 @@ function FormularioProdutos() {
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     toastAlerta('O token expirou, favor logar novamente', 'info')
-                    window.navigator.vibrate(300)
                     handleLogout()
                 } else {
                     toastAlerta('Erro ao cadastrar o Produto', 'erro');
-                    window.navigator.vibrate(300)
                 }
             }
         }

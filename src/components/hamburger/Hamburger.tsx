@@ -14,7 +14,6 @@ export default function Hamburger() {
   function logout() {
     if (usuario.token === '') {
       toastAlerta('Você precisa estar logado para sair!', 'info')
-      window.navigator.vibrate(300)
       closeMenu()
     } else {
       handleLogout()
@@ -25,12 +24,10 @@ export default function Hamburger() {
 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
-    window.navigator.vibrate(50)
   }
 
   function closeMenu() {
     setMenuOpen(false);
-    window.navigator.vibrate(50)
   }
 
   /*  function menuOnClick() {
