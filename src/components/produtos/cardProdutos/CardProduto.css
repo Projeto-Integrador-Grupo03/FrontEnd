@@ -31,7 +31,7 @@
 @media screen and (width <=1460px) {
   
   .duracao-format {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   .duracao-format::-webkit-scrollbar {

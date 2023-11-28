@@ -35,7 +35,7 @@ function CardProdutos({ post }: Readonly<CardProdutosProps>) {
               <h2 className="nome-format text-justify text-[#515961] font-[700] text-[1.1rem]">
                 {post.nome}
               </h2>
-              <span className="duracao-format indent-2 text-justify inline-block font-[400] text-[0.7rem] text-[#515961] h-[3rem] mb-5">
+              <span className="duracao-format indent-2 text-justify inline-block font-[400] text-[0.7rem] text-[#515961] h-[3.5rem]">
                 {post.duracao}
               </span>
             </div>
