@@ -114,7 +114,7 @@ function Contato() {
                   <div className="fonte">
                      <div className="borda flex h-[13.5rem] w-[36rem]">
                         <div
-                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[9rem]"
+                           className="esquerda-imagem rounded-l-[1.8rem] bg-cover bg-no-repeat bg-center w-[11rem]"
                            style={{
                               backgroundImage: `url(${'https://i.imgur.com/3tZY6Hm.jpeg'})`,
                            }}
