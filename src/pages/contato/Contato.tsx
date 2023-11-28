@@ -133,8 +133,8 @@ function Contato() {
                            </div>
 
                            <span className="duracao-format inline-block justify-center items-center indent-2 text-center font-[600] h-[4rem] text-[#515961] text-[0.7rem] px-3">
-                              "Nós aprendemos o mesmo tanto que sofremos." <br />
-                              <i>Karma, a Iluminada.</i>
+                              “A vida vai ficando cada vez mais dura perto do topo.” <br /><br/>
+                              <i>Friedrich Nietzsche</i>
                            </span>
 
                            <div className="div-baixo flex justify-center w-[100%]">
