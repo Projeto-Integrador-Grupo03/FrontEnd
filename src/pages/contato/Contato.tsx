@@ -92,7 +92,7 @@ function Contato() {
                               </div>
                            </div>
 
-                           <span className="duracao-format inline-block justify-center items-center indent-2 text-center font-[600] h-[4rem] text-[#515961] text-[0.7rem] px-3">
+                           <span className="duracao-format2 inline-block justify-center items-center indent-2 text-center font-[600] h-[4rem] text-[#515961] text-[0.7rem] px-3">
                               "Se esse é o seu tempo, quando havia ela de vir senão no seu tempo? <br/>
                               Gosto que tudo seja real e que tudo esteja certo; <br/>
                               E gosto porque assim seria, mesmo que eu não gostasse." <br />
@@ -133,7 +133,7 @@ function Contato() {
                            </div>
 
                            <span className="duracao-format inline-block justify-center items-center indent-2 text-center font-[600] h-[4rem] text-[#515961] text-[0.7rem] px-3">
-                              “A vida vai ficando cada vez mais dura perto do topo.” <br /><br/>
+                              “A vida vai ficando cada vez mais dura perto do topo.” <br />
                               <i>Friedrich Nietzsche</i>
                            </span>
 
