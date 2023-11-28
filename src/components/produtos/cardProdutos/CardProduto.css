@@ -21,7 +21,7 @@
 span.duracao-format {
   overflow-y: auto;
   margin-bottom: 0.3rem;
-  padding: 0.50rem;
+  padding-right: 0.50rem;
 }
 
 span.duracao-format::-webkit-scrollbar {
