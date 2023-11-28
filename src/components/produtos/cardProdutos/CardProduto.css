@@ -21,6 +21,7 @@
 span.duracao-format {
   overflow-y: auto;
   margin-bottom: 0.3rem;
+  padding: 0.50rem;
 }
 
 span.duracao-format::-webkit-scrollbar {
@@ -50,6 +51,7 @@ span.duracao-format::-webkit-scrollbar {
   span.duracao-format {
     overflow-y: auto;
     margin-bottom: 0.7rem;
+    padding: 0.50rem;
   }
 
   span.duracao-format::-webkit-scrollbar {
@@ -59,7 +61,7 @@ span.duracao-format::-webkit-scrollbar {
     border-bottom-right-radius: 0.25rem;
   }span::-webkit-scrollbar-thumb {
     width: 0.25rem;
-    background-color: hsla(16, 78%, 76%, 0.90);
+    background-color: hsla(16, 78%, 76%, 0.60);
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
   }

@@ -52,7 +52,7 @@ function ListaCategoria() {
         <div className="w-[85%]">
           <div className='flex items-center justify-between'>
             <h1 className="padrao text-[2.5rem] text-[#515961]">Categoria</h1>
-            {usuario.usuario === 'root@root.com.br' ? (<Link to="/cadastrocategoria" className='link-categorias flex justify-center items-center text-center border-none outline-none w-[3rem] p-[0.60rem] shadow-md bg-[#d973ab] rounded-full'><i><Plus size={32} color="#f5f5f5" weight="bold" /></i></Link>) : ('')}
+            {usuario.usuario === 'root@root.com.br' ? (<Link to="/cadastrocategoria" className='link-categorias flex justify-center items-center text-center border-none outline-none w-[3rem] h-[3rem] shadow-md bg-[#d973ab] rounded-full'><i><Plus size={32} color="#f5f5f5" weight="bold" /></i></Link>) : ('')}
           </div>
           <hr className="separador w-full border-[0.15rem] rounded-sm" />
         </div>

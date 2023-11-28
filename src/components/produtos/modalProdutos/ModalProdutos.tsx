@@ -18,7 +18,7 @@ function ModalProdutos() {
                     <Popup
                         trigger={
                             <button
-                                className='btn-produtos flex justify-center items-center text-center border-none outline-none w-[3rem] p-[0.60rem] shadow-md bg-[#d973ab] rounded-full'>
+                                className='btn-produtos flex justify-center items-center text-center border-none outline-none w-[3rem] h-[3rem] shadow-md bg-[#d973ab] rounded-full'>
                                 <i><Plus size={32} color="#f5f5f5" weight="bold" /></i>
                             </button>
                         }
